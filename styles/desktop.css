@@ -1,6 +1,6 @@
 /* ===============================
    DESKTOP.CSS - Valley Pest Experts
-   Desktop Styles (≥1024px)
+   Desktop Styles (≥1024px) – Updated & Tidied
 ================================ */
 
 /* ---------- RESET / BASE ---------- */
@@ -9,13 +9,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #1f3b2c; /* dark green text */
-  background-color: #f4f4f4;
+  background-color: #f8f9fa; /* lighter neutral bg */
+  text-align: center; /* global text centering */
 }
 
 /* ---------- LINKS ---------- */
@@ -24,289 +24,323 @@ a {
   color: #1f3b2c;
   transition: all 0.3s ease;
 }
-
 a:hover {
-  color: #f4b400; /* call-to-action yellow */
+  color: #f4b400; /* gold hover */
 }
 
 /* ---------- HEADER ---------- */
 .site-header {
   background-color: #ffffff;
-  border-bottom: 3px solid #1f3b2c;
-  padding: 1.5rem 5%;
+  border-bottom: 4px solid #1f3b2c;
+  padding: 2rem 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
-
 .logo-container img {
-  max-width: 120px; /* smaller logo */
+  max-width: 140px; /* slightly larger but balanced */
   margin-bottom: 0.8rem;
 }
-
 .site-header h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  color: #1f3b2c;
+  margin-bottom: 0.4rem;
 }
-
 .site-header .tagline {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  margin-bottom: 0.8rem;
   color: #3a5a40;
+  margin-bottom: 1rem;
 }
-
 .header-cta {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 0.8rem;
 }
-
 .header-cta a {
-  padding: 0.6rem 1rem; /* smaller buttons */
-  border-radius: 6px;
-  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease;
 }
-
 .header-cta .primary-cta {
   background-color: #f4b400;
   color: #1f3b2c;
 }
-
 .header-cta .primary-cta:hover {
   background-color: #e0a600;
+  transform: scale(1.05);
 }
-
 .header-cta .secondary-cta {
   background-color: #1f3b2c;
   color: #ffffff;
 }
-
 .header-cta .secondary-cta:hover {
   background-color: #16301f;
+  transform: scale(1.05);
 }
 
 /* ---------- SERVICE HUBS ---------- */
 .service-hubs {
-  background-color: #e6f0e6;
-  padding: 2rem 5%;
-  text-align: center;
+  background-color: #e6f0e6; /* light green bg */
+  padding: 3rem 5%;
 }
-
 .service-hubs h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: #1f3b2c;
 }
-
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
 }
-
 .link-grid a {
   background-color: #ffffff;
-  padding: 0.9rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-weight: 600;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #1f3b2c;
+  font-weight: 700;
+  color: #1f3b2c;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
-
 .link-grid a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  background-color: #fdfdfd;
+  background-color: #f4b400;
+  color: #1f3b2c;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 
 /* ---------- ABOUT / TEXT ---------- */
 .about {
-  padding: 2rem 5%;
+  padding: 3rem 5%;
   background-color: #ffffff;
-  border-radius: 8px;
-  margin: 1.5rem auto;
-  max-width: 1000px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
-
 .about h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
-  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
   color: #1f3b2c;
 }
-
 .about-text p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #2c4a3a;
 }
-
 .about-text ul.service-list {
-  margin: 1rem 0;
-  list-style-type: disc;
+  margin: 1.5rem 0;
   padding-left: 2rem;
-  font-size: 0.95rem;
+  list-style-type: disc;
+  font-size: 1.05rem;
+  color: #3a5a40;
 }
 
 /* ---------- COVERAGE LIST ---------- */
 .coverage-list {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
+  margin: 2rem auto;
+  max-width: 900px;
 }
-
 .coverage-list ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 0.4rem 1rem;
-  list-style: circle;
-  color: #3a5a40;
-  font-weight: 500;
-  font-size: 0.95rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.1rem;
+  color: #1f3b2c;
+}
+.coverage-list li {
+  background: #e6f0e6;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #a8c4a8;
 }
 
 /* ---------- SERVICES GALLERY ---------- */
 .services-gallery {
-  padding: 2rem 5%;
+  padding: 3rem 5%;
   background-color: #f9f9f9;
-  border-radius: 8px;
-  margin: 1.5rem auto;
-  max-width: 1000px;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
-
 .services-gallery h2 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
   color: #1f3b2c;
 }
-
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
-
 .projects-grid figure {
   overflow: hidden;
-  border-radius: 6px;
-  border: 1px solid #ddd;
+  border-radius: 10px;
+  border: 2px solid #1f3b2c;
   background-color: #ffffff;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projects-grid figure:hover {
-  transform: translateY(-2px);
+  transition: all 0.3s ease;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
-
+.projects-grid figure:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
 .projects-grid img {
-  width: 90%;
-  margin: 0.5rem auto;
+  width: 85%; /* smaller images */
+  max-width: 240px;
+  margin: 1rem auto;
   display: block;
-  border-bottom: 1px solid #ddd;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
 }
-
 .projects-grid figure:hover img {
-  transform: scale(1.02);
+  transform: scale(1.08);
 }
-
 .projects-grid figcaption {
-  padding: 0.5rem;
-  font-weight: 600;
+  padding: 0.8rem;
+  font-weight: 700;
   color: #1f3b2c;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  background: #e6f0e6;
 }
 
 /* ---------- BADGE SECTION ---------- */
 .badge-section {
-  padding: 1.8rem 5%;
+  padding: 2.5rem 5%;
   background-color: #e6f0e6;
   text-align: center;
-  border-radius: 8px;
-  margin: 1.2rem auto;
-  max-width: 700px;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 800px;
 }
-
-.badge-section img.rsph-badge {
-  max-width: 60px; /* smaller badge */
-  margin-bottom: 0.6rem;
+.badge-section img {
+  max-width: 80px; /* smaller badge */
+  margin-bottom: 1rem;
 }
-
 .badge-section h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #1f3b2c;
 }
-
 .badge-section p {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.05rem;
 }
 
 /* ---------- MAP SECTION ---------- */
 .map-section {
-  padding: 2rem 5%;
+  padding: 3rem 5%;
 }
-
 .map-section h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: #1f3b2c;
 }
-
 .map-container iframe {
   width: 100%;
-  height: 350px; /* smaller map */
-  border: 3px solid #1f3b2c;
-  border-radius: 8px;
+  height: 420px; /* slightly larger but tidy */
+  border: 4px solid #1f3b2c;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.map-note {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #3a5a40;
+}
+
+/* ---------- QUOTE CTA & HIGH CTA ---------- */
+.quote-cta, .cta {
+  background: linear-gradient(135deg, #f4b400, #e0a600);
+  color: #1f3b2c;
+  padding: 3.5rem 5%;
+  border-radius: 12px;
+  margin: 2.5rem 5%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.quote-cta h2, .cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.quote-cta p, .cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.quote-cta a, .cta a {
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.quote-cta a {
+  background: #1f3b2c;
+  color: #f4b400;
+}
+.quote-cta a:hover, .cta a:hover {
+  background: #16301f;
+  transform: scale(1.08);
 }
 
 /* ---------- FOOTER ---------- */
 .site-footer {
   background-color: #1f3b2c;
   color: #ffffff;
+  padding: 3rem 5%;
   text-align: center;
-  padding: 1.5rem 5%;
 }
-
+.site-footer img {
+  max-width: 160px;
+  margin-bottom: 1.5rem;
+}
 .site-footer a {
   color: #f4b400;
   font-weight: 600;
 }
-
+.site-footer .footer-links a {
+  margin: 0 0.8rem;
+  font-size: 1.05rem;
+}
 .site-footer .small-print {
-  font-size: 0.78rem;
-  opacity: 0.7;
-  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 2rem;
 }
 
 /* ---------- MOBILE FLOAT CALL BUTTON ---------- */
 .mobile-call-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: #f4b400;
   color: #1f3b2c;
-  padding: 0.65rem 0.8rem;
+  padding: 0.9rem 1.1rem;
   border-radius: 50%;
-  font-size: 1.4rem;
-  text-align: center;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  font-size: 1.8rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
   z-index: 9999;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+}
+.mobile-call-float:hover {
+  transform: scale(1.15);
+  background-color: #e0a600;
 }
 
-.mobile-call-float:hover {
-  transform: scale(1.1);
+/* ---------- RESPONSIVE GRID FIXES ---------- */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .link-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }
