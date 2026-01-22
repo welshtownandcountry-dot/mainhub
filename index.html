@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valley Pest Experts | Farm Pest Control, Solar Farm Protection & Rodent Management Wales</title>
-  <meta name="description" content="Expert poison-free farm pest control across South & Mid Wales. Specialising in rodent control for farms, solar farm pest protection (rats, rabbits, moles), mole catching, Red Tractor audit support & compliance. Call David on 07375 303124 for site surveys & contracts.">
-  <meta name="keywords" content="farm pest control Wales, solar farm pest control, rodent control farms, mole control Wales, Red Tractor pest audit, poison-free rodent control, agricultural pest management, solar array pest protection, rabbit control farmland, farm rodent management Carmarthenshire, Brecon farm pests, Swansea Valley pest control, Mid Wales agricultural pest services">
+  <title>Valley Pest Experts | Poison-Free Farm & Solar Pest Control Wales</title>
+  <meta name="description" content="David Hill – Ex-Pestokil technician – offers expert poison-free pest control across South & Mid Wales. Farm rodent/mole/rabbit management, solar farm PV protection, Red Tractor & SALSA audit support 2026. Call 07375 303124 for site surveys & contracts.">
+  <meta name="keywords" content="farm pest control Wales, solar farm pest control, poison-free rodent control farms, mole control farmland, rabbit control agricultural land, Red Tractor pest audit support 2026, farm IPM Carmarthenshire, Tywi Valley pest management, Ammanford pest control, Brecon Beacons rural pests">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.valleypestexperts.co.uk/">
-  <!-- Schema remains unchanged -->
+  <!-- Schema: LocalBusiness with owned images -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -16,11 +16,15 @@
     "name": "Valley Pest Experts",
     "url": "https://www.valleypestexperts.co.uk/",
     "telephone": "+447375303124",
-    "description": "Leading poison-free pest control for farms, solar farms, commercial sites across South and Mid Wales. Specialising in farm rodent control, solar farm pest protection, mole catching, Red Tractor audit support and compliance services.",
+    "description": "Poison-free pest control expert David Hill serving farms, solar sites & rural properties across South & Mid Wales. Farm rodent control, solar farm protection, mole catching, Red Tractor audit compliance.",
     "image": [
       "https://www.valleypestexperts.co.uk/images/brecon-farm-pest-control.png",
       "https://www.valleypestexperts.co.uk/images/mole-farm.jpg",
-      "https://www.valleypestexperts.co.uk/images/rsph-cert-badge.png"
+      "https://www.valleypestexperts.co.uk/images/rsph-cert-badge.png",
+      "https://www.valleypestexperts.co.uk/images/rabbit-farm.jpg",
+      "https://www.valleypestexperts.co.uk/images/perimeter-mesh-solar.jpg",
+      "https://www.valleypestexperts.co.uk/images/solar-farm-wales.jpg",
+      "https://www.valleypestexperts.co.uk/images/technician-solar-inspection.jpg"
     ],
     "priceRange": "$$",
     "sameAs": ["https://www.welshtownandcountry.co.uk/"],
@@ -45,13 +49,11 @@
       "closes": "18:00"
     },
     "serviceOffered": [
-      {"@type": "Service", "name": "Farm Pest Control & Rodent Management"},
-      {"@type": "Service", "name": "Solar Farm Pest Protection & PV Array Rodent Control"},
-      {"@type": "Service", "name": "Mole Control for Farmland & Estates"},
-      {"@type": "Service", "name": "Red Tractor & SALSA Audit-Ready Pest Compliance"},
-      {"@type": "Service", "name": "Poison-Free Agricultural Pest Control"},
-      {"@type": "Service", "name": "Rabbit & Burrowing Pest Control for Solar Sites"},
-      {"@type": "Service", "name": "Commercial & Rural Rodent Management"}
+      {"@type": "Service", "name": "Farm Pest Control & IPM"},
+      {"@type": "Service", "name": "Solar Farm Pest Protection"},
+      {"@type": "Service", "name": "Mole & Rabbit Control"},
+      {"@type": "Service", "name": "Red Tractor & SALSA Compliance"},
+      {"@type": "Service", "name": "Poison-Free Rodent Management"}
     ]
   }
   </script>
@@ -71,28 +73,31 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
     }
     header p {
       margin: 0.4rem 0;
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 3vw, 1.1rem);
     }
     .header-cta {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 0.8rem;
       margin-top: 1rem;
     }
     header a {
-      display: block;
-      padding: 0.9rem 1.6rem;
+      flex: 1 1 220px;
+      max-width: 300px;
+      padding: 0.9rem 1.2rem;
       background: #f4b400;
       color: #000;
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
       transition: background 0.3s;
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 3vw, 1.1rem);
+      text-align: center;
     }
     header a:hover {
       background: #d49a00;
@@ -100,17 +105,17 @@
     main {
       max-width: 1100px;
       margin: auto;
-      padding: 1.5rem 1rem;
+      padding: clamp(1rem, 3vw, 2rem) 1rem;
       background: #fff;
     }
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: clamp(2rem, 4vw, 3rem);
     }
     h2 {
       color: #1f3b2c;
       border-bottom: 2px solid #e0e0e0;
       padding-bottom: 0.4rem;
-      font-size: 1.8rem;
+      font-size: clamp(1.6rem, 4vw, 2rem);
     }
     ul {
       padding-left: 1.3rem;
@@ -173,45 +178,31 @@
       max-width: 160px;
       margin: 1rem auto;
     }
-
-    /* Mobile-first responsive adjustments */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
     @media (min-width: 768px) {
+      .header-cta {
+        flex-wrap: nowrap;
+      }
+      .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
       header {
         padding: 2.5rem 2rem;
-      }
-      header h1 {
-        font-size: 2.8rem;
-      }
-      .header-cta {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1.2rem;
-      }
-      header a {
-        display: inline-block;
-        min-width: 240px;
-      }
-      h2 {
-        font-size: 2.2rem;
       }
       main {
         padding: 2.5rem 2rem;
       }
     }
-
     @media (max-width: 480px) {
       header h1 {
         font-size: 1.9rem;
       }
-      header p {
-        font-size: 1rem;
-      }
       header a {
-        font-size: 1rem;
-        padding: 0.8rem 1.2rem;
-      }
-      h2 {
-        font-size: 1.6rem;
+        padding: 0.8rem 1rem;
       }
     }
   </style>
@@ -219,11 +210,11 @@
 <body>
 <header>
   <h1>Valley Pest Experts</h1>
-  <p><strong>Main Pest Control Hub for Farm, Solar Farm & Rural Wales</strong></p>
-  <p>Farm Rodent Control • Solar Farm Pest Protection • Mole Catching • Red Tractor Audit Support</p>
+  <p><strong>Poison-Free Pest Control Hub – Farms, Solar Sites & Rural Wales</strong></p>
+  <p>Farm Rodent Control • Solar Farm Protection • Mole Catching • Red Tractor 2026 Ready</p>
   <div class="header-cta">
     <a href="tel:07375303124">📞 Ring David: 07375 303124</a>
-    <a href="https://www.valleypestexperts.co.uk/solar-farm-pest-control.html">Solar Farm Pest Protection</a>
+    <a href="https://www.valleypestexperts.co.uk/solar-farm-pest-control.html">Solar Farm Protection</a>
     <a href="https://www.valleypestexperts.co.uk/farm-pest-management.html">Farm Pest Management & IPM</a>
   </div>
 </header>
@@ -231,12 +222,12 @@
   <section>
     <h2>Wales-Wide Farm & Solar Pest Control Experts</h2>
     <figure>
-      <img src="images/brecon-farm-pest-control.png" alt="Welsh farm landscape in Brecon Beacons area - farm pest control Wales" loading="lazy">
-      <figcaption>Typical Welsh farmland protected with our poison-free pest control methods</figcaption>
+      <img src="images/brecon-farm-pest-control.png" alt="Welsh farm landscape in Brecon Beacons area - poison-free pest control Wales" loading="lazy">
+      <figcaption>Protected Welsh farmland using sustainable, audit-ready methods</figcaption>
     </figure>
-    <p><strong>Valley Pest Experts</strong> is the central hub for poison-free pest control across South and Mid Wales, supporting farms, solar developments, estates and rural properties.</p>
-    <p>We deliver specialist <strong>farm pest control</strong>, <strong>solar farm rodent damage prevention</strong>, <strong>mole control on farmland</strong>, and <strong>Red Tractor audit-ready pest management</strong>. Using integrated, low-risk methods with digital records, site surveys, and compliance documentation to protect crops, livestock, PV arrays, cables, and infrastructure.</p>
-    <p>Focused on agricultural pest control in Carmarthenshire, Swansea Valley, Brecon Beacons, Merthyr Tydfil, Neath, and beyond—preventing rodent, rabbit, and mole issues that cause fire risks, ground instability, or audit failures.</p>
+    <p><strong>Valley Pest Experts</strong> – led by David Hill (ex-Pestokil, RSPH certified) – is your central hub for poison-free pest control across South & Mid Wales. We support farms, solar developments, estates and rural properties with practical, compliant solutions.</p>
+    <p>Specialising in <strong>farm pest control</strong>, <strong>solar farm rodent damage prevention</strong>, <strong>mole control on farmland</strong>, and <strong>Red Tractor/SALSA audit-ready management</strong> – using integrated low-risk techniques, digital records, site surveys and full compliance documentation to safeguard crops, livestock, PV arrays, cables and infrastructure.</p>
+    <p>Focused on Carmarthenshire, Swansea Valley, Brecon Beacons, Merthyr Tydfil, Neath, Tywi Valley and beyond – preventing rodent, rabbit and mole issues that risk fire, ground instability or audit failures in 2026.</p>
   </section>
 
   <section>
@@ -245,29 +236,64 @@
       <li>Farm rodent control – rats, mice on agricultural land & buildings</li>
       <li><a href="https://www.valleypestexperts.co.uk/solar-farm-pest-control.html">Solar farm pest protection</a> – rodent & rabbit management for PV arrays & solar sites</li>
       <li><a href="https://www.valleypestexperts.co.uk/farm-pest-management.html">Farm pest management & IPM</a> – integrated rodent, mole & rabbit control with audit support</li>
-      <li>Mole control Wales – traditional catching for farmland, estates & solar developments
+      <li>Mole control Wales – traditional humane catching for farmland, estates & solar developments
         <figure>
-          <img src="images/mole-farm.jpg" alt="Mole control on Welsh farmland - effective mole catching for agricultural land" loading="lazy">
-          <figcaption>Mole activity in Welsh fields – our humane, traditional control methods</figcaption>
+          <img src="images/mole-farm.jpg" alt="Mole control on Welsh farmland - effective humane catching for agricultural land" loading="lazy">
+          <figcaption>Mole activity in Welsh fields – our traditional, poison-free control</figcaption>
         </figure>
       </li>
-      <li>Red Tractor & SALSA pest audit support – documentation, bait plans & compliance</li>
+      <li>Red Tractor & SALSA pest audit support – documentation, bait plans & 2026 compliance</li>
       <li>Poison-free & eco-friendly farm pest management – trapping, monitoring & prevention</li>
-      <li>Rabbit & burrowing pest control – preventing subsidence & cable damage on solar farms</li>
+      <li>Rabbit & burrowing pest control – preventing subsidence & cable damage on solar farms
+        <figure>
+          <img src="images/rabbit-farm.jpg" alt="Rabbit control on farmland Wales - preventing burrowing damage agricultural land" loading="lazy">
+          <figcaption>Rabbit burrowing prevention on Welsh farms</figcaption>
+        </figure>
+      </li>
       <li>Agricultural pest control contracts – long-term monitoring for Welsh farms</li>
       <li>Commercial rodent management – industrial sites & rural businesses</li>
     </ul>
   </section>
 
   <section>
+    <h2>Recent Farm & Solar Projects</h2>
+    <div class="projects-grid">
+      <figure>
+        <img src="images/brecon-farm-pest-control.png" alt="Farm pest control project Brecon Beacons Wales" loading="lazy">
+        <figcaption>Brecon farm rodent management</figcaption>
+      </figure>
+      <figure>
+        <img src="images/mole-farm.jpg" alt="Mole control farmland Wales" loading="lazy">
+        <figcaption>Mole clearance on agricultural land</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rabbit-farm.jpg" alt="Rabbit proofing farmland Carmarthenshire" loading="lazy">
+        <figcaption>Rabbit exclusion on rural property</figcaption>
+      </figure>
+      <figure>
+        <img src="images/perimeter-mesh-solar.jpg" alt="Solar farm perimeter mesh installation pest protection" loading="lazy">
+        <figcaption>Solar array perimeter protection</figcaption>
+      </figure>
+      <figure>
+        <img src="images/solar-farm-wales.jpg" alt="Solar farm site survey Tywi Valley Wales" loading="lazy">
+        <figcaption>Solar farm in Welsh countryside</figcaption>
+      </figure>
+      <figure>
+        <img src="images/technician-solar-inspection.jpg" alt="Pest technician inspecting solar panels Wales" loading="lazy">
+        <figcaption>On-site solar pest inspection</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
     <h2>Why Farms Choose Valley Pest Experts</h2>
     <figure>
       <img src="images/rsph-cert-badge.png" alt="RSPH certified pest control - professional standards for Red Tractor farm audits Wales" class="badge" loading="lazy">
-      <figcaption>RSPH Level 2 certified – ensuring audit-ready compliance for farms</figcaption>
+      <figcaption>RSPH Level 2 certified – audit-ready expertise</figcaption>
     </figure>
     <ul>
       <li>Main hub linking regional sites for consistent Wales-wide coverage</li>
-      <li>Built for Red Tractor, SALSA inspections & farm assurance audits</li>
+      <li>Built for Red Tractor, SALSA inspections & 2026 farm assurance audits</li>
       <li>Ex-Pestokil technician – practical, honest farm-focused advice</li>
       <li>Clear digital records, site surveys & audit trails for compliance</li>
       <li>Poison-free priority – safe for livestock, wildlife & the environment</li>
