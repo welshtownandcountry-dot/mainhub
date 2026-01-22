@@ -1,172 +1,62 @@
-/* Core Layout */
-body { 
-    margin: 0; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    line-height: 1.7; 
-    color: #222; 
-    background: #fdfdfd; 
-}
+/* Valley Pest Experts - Mobile Styling 
+*/
 
-header { 
-    background: #1f3b2c; 
-    color: #fff; 
-    padding: 2.5rem 1rem 2rem; 
-    text-align: center; 
-    border-bottom: 5px solid #f4b400; 
-}
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
 
-.logo-container { 
-    max-width: 400px; 
-    margin: 0 auto 1.5rem; 
-}
+    .logo-container {
+        max-width: 80%;
+    }
 
-.logo-container img { 
-    width: 100%; 
-    height: auto; 
-    display: block; 
-    transition: transform 0.3s ease; 
-}
+    header a {
+        flex: 1 1 100%;
+        font-size: 1rem;
+    }
 
-.logo-container img:hover { 
-    transform: scale(1.04); 
-}
+    main {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
 
-header h1 { 
-    margin: 0.4rem 0 0.8rem; 
-    font-size: clamp(1.8rem, 5.5vw, 2.6rem); 
-    color: #f4b400; 
-}
+    h2 {
+        font-size: 1.6rem;
+        padding-left: 1rem;
+    }
 
-header p { 
-    margin: 0.5rem 0 1.4rem; 
-    font-weight: bold; 
-    text-transform: uppercase; 
-    letter-spacing: 1.3px; 
-    font-size: 1.15rem; 
-}
+    .coverage-list {
+        columns: 1;
+    }
 
-/* Navigation & Buttons */
-.header-cta { 
-    display: flex; 
-    justify-content: center; 
-    gap: 1rem; 
-    margin-top: 1rem; 
-}
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 
-header a, .quick-links a { 
-    flex: 1 1 220px; 
-    max-width: 300px; 
-    padding: 1rem 1.5rem; 
-    background: #f4b400; 
-    color: #000; 
-    text-decoration: none; 
-    font-weight: bold; 
-    border-radius: 6px; 
-    transition: 0.3s; 
-    text-align: center; 
-    border: 2px solid transparent; 
-    font-size: 1.1rem; 
-}
+    figure img {
+        height: auto;
+    }
 
-header a:hover { 
-    background: transparent; 
-    color: #f4b400; 
-    border-color: #f4b400; 
-}
+    .badge-section {
+        padding: 2rem 1rem;
+    }
 
-.quick-links a { 
-    display: inline-block; 
-    margin: 0.6rem 1.2rem; 
-}
-
-.quick-links a:hover { 
-    background: #d49a00; 
-}
-
-/* Main Content */
-main { 
-    max-width: 1100px; 
-    margin: auto; 
-    padding: 2rem 1rem; 
-    background: #fff; 
-}
-
-section { 
-    margin-bottom: 3.5rem; 
-}
-
-h2 { 
-    color: #1f3b2c; 
-    border-left: 5px solid #f4b400; 
-    padding-left: 1rem; 
-    font-size: clamp(1.6rem, 4.5vw, 2rem); 
-    margin-bottom: 1.2rem; 
-}
-
-.about-text { 
-    font-size: 1.05rem; 
-    max-width: 900px; 
-    margin: 0 auto; 
-}
-
-.coverage-list { 
-    columns: 3; 
-    column-gap: 2rem; 
-    list-style: disc; 
-    padding-left: 1.5rem; 
-    margin: 1.5rem 0; 
-}
-
-/* Grids & Badges */
-.projects-grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 1.5rem; 
-    margin-top: 2rem; 
-}
-
-figure { 
-    margin: 0; 
-    text-align: center; 
-    border: 1px solid #eee; 
-    padding: 10px; 
-    border-radius: 8px; 
-    transition: transform 0.3s; 
-}
-
-figure:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-}
-
-.badge-section { 
-    text-align: center; 
-    background: #eef3f0; 
-    padding: 2.5rem; 
-    border-radius: 8px; 
-    border: 1px solid #d0d8d3; 
-}
-
-.rsph-badge { 
-    max-width: 160px; 
-}
-
-/* Footer */
-footer { 
-    background: #1f3b2c; 
-    color: #fff; 
-    text-align: center; 
-    padding: 3rem 1rem; 
-}
-
-footer a { 
-    color: #f4b400; 
-}
-
-.gbp-link { 
-    display: inline-block; 
-    margin-top: 1.2rem; 
-    padding: 12px 25px; 
-    border: 2px solid #f4b400; 
-    border-radius: 5px; 
+    /* Floating Call Button for Mobile */
+    .mobile-call-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25d366; /* WhatsApp Green or use Gold */
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 1000;
+        text-decoration: none;
+    }
 }
