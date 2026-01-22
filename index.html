@@ -30,7 +30,30 @@
   </div>
   <h1>Valley Pest Experts</h1>
   <p class="tagline">Poison-Free Pest Control for Farms, Solar Sites & Holiday Homes in Rural Wales</p>
-  <div class="header-cta">
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <ul style="list-style:none; padding:0; margin:1rem 0; display:flex; flex-wrap:wrap; gap:1rem;">
+      <li><a href="/farm-pest-management.html" style="text-decoration:none;">Farm Pest Management</a></li>
+      <li><a href="/solar-farm-pest-control.html" style="text-decoration:none;">Solar Farm Protection</a></li>
+
+      <!-- Dropdown for Holiday Homes -->
+      <li style="position:relative;">
+        <a href="/holiday-homes-pest-control.html" style="text-decoration:none;">Holiday Homes & Rural Lets ▼</a>
+        <ul style="position:absolute; top:100%; left:0; background:#1f3b2c; color:#fff; list-style:none; padding:0.5rem 0; margin:0; display:none; min-width:220px; border-radius:4px; box-shadow:0 2px 6px rgba(0,0,0,0.3); z-index:1000;">
+          <li><a href="/holiday-homes-pest-control.html" style="display:block; padding:0.5rem 1rem; color:#f4b400; text-decoration:none;">All Holiday Homes</a></li>
+          <li><a href="/holiday-homes-brecon-beacons.html" style="display:block; padding:0.5rem 1rem; color:#f4b400; text-decoration:none;">Brecon Beacons Holiday Homes</a></li>
+          <li><a href="/holiday-homes-tywi-valley.html" style="display:block; padding:0.5rem 1rem; color:#f4b400; text-decoration:none;">Tywi Valley Holiday Homes</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/audit-compliance.html" style="text-decoration:none;">Audit & Compliance</a></li>
+      <li><a href="/proofing-services.html" style="text-decoration:none;">Squirrel & Bird Proofing</a></li>
+      <li><a href="/wasp-removal.html" style="text-decoration:none;">Wasp & Hornet Removal</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-cta" style="margin-top:1rem;">
     <a href="tel:07375303124" class="primary-cta">📞 Speak to David – 07375 303124</a>
     <a href="https://www.google.com/business/" target="_blank" class="secondary-cta">View Google Business Profile</a>
   </div>
@@ -147,6 +170,8 @@
     <a href="/farm-pest-management.html" style="color:#f4b400; margin:0 0.5rem;">Farm Pest Management</a> |
     <a href="/solar-farm-pest-control.html" style="color:#f4b400; margin:0 0.5rem;">Solar Farm Protection</a> |
     <a href="/holiday-homes-pest-control.html" style="color:#f4b400; margin:0 0.5rem;">Holiday Homes & Cottages</a> |
+    <a href="/holiday-homes-brecon-beacons.html" style="color:#f4b400; margin:0 0.5rem;">Brecon Beacons Holiday Homes</a> |
+    <a href="/holiday-homes-tywi-valley.html" style="color:#f4b400; margin:0 0.5rem;">Tywi Valley Holiday Homes</a> |
     <a href="/audit-compliance.html" style="color:#f4b400; margin:0 0.5rem;">Audit & Compliance</a> |
     <a href="/proofing-services.html" style="color:#f4b400; margin:0 0.5rem;">Proofing Services</a>
   </div>
@@ -163,6 +188,14 @@
 
 <!-- MOBILE FLOAT CALL BUTTON -->
 <a href="tel:07375303124" class="mobile-call-float" aria-label="Call David Hill" style="position:fixed;bottom:1rem;right:1rem;background:#f4b400;color:#000;font-size:2rem;padding:0.5rem 0.75rem;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);z-index:999;">📞</a>
+
+<!-- Dropdown hover script -->
+<script>
+  const dropdown = document.querySelector('li[style*="position:relative"]');
+  const submenu = dropdown.querySelector('ul');
+  dropdown.addEventListener('mouseenter', () => { submenu.style.display = 'block'; });
+  dropdown.addEventListener('mouseleave', () => { submenu.style.display = 'none'; });
+</script>
 
 </body>
 </html>
