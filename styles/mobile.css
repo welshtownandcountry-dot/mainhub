@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    header { 
+        padding: 1.8rem 1rem 1.5rem; 
+    }
+
+    .logo-container { 
+        max-width: 280px; 
+    }
+
+    .header-cta { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header a { 
+        width: 100%; 
+        max-width: 100%; 
+    }
+
+    .projects-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    .coverage-list { 
+        columns: 1; 
+    }
+    
+    .quick-links a {
+        display: block;
+        margin: 0.8rem 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .coverage-list { 
+        columns: 2; 
+    }
+}
