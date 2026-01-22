@@ -1,38 +1,158 @@
+/* Valley Pest Experts - Mobile & Tablet Responsive Styling 
+   Targeting: Smartphones (Portrait/Landscape) and Tablets
+*/
+
+/* --- Tablet & Small Desktop (769px to 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        margin: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .coverage-list { 
+        columns: 2; 
+        column-gap: 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* --- Mobile Devices (Max 768px) --- */
 @media (max-width: 768px) {
+    /* Header Adjustments */
     header { 
         padding: 1.8rem 1rem 1.5rem; 
+        border-bottom-width: 4px;
     }
 
     .logo-container { 
         max-width: 280px; 
+        margin-bottom: 1rem;
     }
 
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    header p {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+    /* Stack CTA Buttons Vertically */
     .header-cta { 
         flex-direction: column; 
         align-items: center; 
+        gap: 0.8rem;
     }
 
     header a { 
         width: 100%; 
         max-width: 100%; 
+        box-sizing: border-box;
+        padding: 0.9rem;
+        font-size: 1rem;
     }
 
+    /* Main Content Layout */
+    main {
+        margin: 0.8rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 0.8rem;
+        border-left-width: 4px;
+    }
+
+    /* Single Column Lists & Grids */
     .projects-grid { 
         grid-template-columns: 1fr; 
+        gap: 1.2rem;
+    }
+
+    figure img {
+        height: auto; /* Allow images to find natural height on small screens */
     }
 
     .coverage-list { 
         columns: 1; 
+        padding-left: 0.5rem;
     }
-    
+
+    .coverage-list li {
+        padding: 0.4rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Quick Links Box */
+    .quick-links {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
     .quick-links a {
         display: block;
-        margin: 0.8rem 0;
+        margin: 0.5rem 0;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Compliance & Badges */
+    .badge-section {
+        padding: 2rem 1rem;
+    }
+
+    .rsph-badge {
+        max-width: 140px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 2.5rem 1rem 5rem; /* Extra bottom padding for floating button */
+    }
+
+    /* Floating Call Action Button 
+       Add this to your HTML just before </body>: 
+       <a href="tel:07375303124" class="mobile-call-float">📞</a>
+    */
+    .mobile-call-float {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #f4b400; /* Matching Brand Gold */
+        color: #000;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        z-index: 9999;
+        text-decoration: none;
+        border: 2px solid #fff;
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .coverage-list { 
-        columns: 2; 
+/* --- Small Screen Optimization (Max 380px) --- */
+@media (max-width: 380px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-container {
+        max-width: 220px;
     }
 }
