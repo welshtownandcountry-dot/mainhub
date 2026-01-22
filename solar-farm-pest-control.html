@@ -23,58 +23,8 @@
   <link rel="stylesheet" href="styles/desktop.css">
   <link rel="stylesheet" href="styles/mobile.css">
 
-  <!-- HubSpot Tracking -->
+  <!-- HubSpot Tracking Script (required for forms to work) -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/147644502.js"></script>
-
-  <!-- Enhanced LocalBusiness + Service Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Valley Pest Experts - Solar Farm Pest Control",
-    "url": "https://www.valleypestexperts.co.uk/solar-farm-pest-control.html",
-    "telephone": "+447375303124",
-    "description": "Poison-free IPM for solar farms across South & Mid Wales: humane rabbit/rodent/mole control, cable protection, ground stability. O&M support, digital reports, no poisons for eco-sites in Tywi Valley, Brecon Beacons, Carmarthenshire, Powys.",
-    "image": [
-      "https://www.valleypestexperts.co.uk/images/solar-array-pest-proofing.jpg",
-      "https://www.valleypestexperts.co.uk/images/rabbit-solar-burrow.jpg",
-      "https://www.valleypestexperts.co.uk/images/rodent-cable-damage.jpg",
-      "https://www.valleypestexperts.co.uk/images/rsph-cert-badge.png"
-    ],
-    "priceRange": "$$",
-    "areaServed": [
-      {"@type": "AdministrativeArea", "name": "South Wales"},
-      {"@type": "AdministrativeArea", "name": "Mid Wales"},
-      {"@type": "AdministrativeArea", "name": "Carmarthenshire"},
-      {"@type": "AdministrativeArea", "name": "Powys"},
-      {"@type": "AdministrativeArea", "name": "Brecon Beacons National Park"},
-      {"@type": "AdministrativeArea", "name": "Tywi Valley"},
-      {"@type": "AdministrativeArea", "name": "Ammanford"},
-      {"@type": "AdministrativeArea", "name": "Llandeilo"},
-      {"@type": "AdministrativeArea", "name": "Neath Port Talbot"},
-      {"@type": "AdministrativeArea", "name": "Newport"}
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "David Hill",
-      "jobTitle": "RSPH Level 2 Pest Control Technician"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "08:00",
-      "closes": "18:00"
-    },
-    "serviceOffered": [
-      {"@type": "Service", "name": "Poison-Free Solar Farm Pest Management (IPM)"},
-      {"@type": "Service", "name": "Humane Rabbit Burrowing Prevention & Exclusion"},
-      {"@type": "Service", "name": "Rodent Cable & Wiring Protection"},
-      {"@type": "Service", "name": "Mole Control for Ground Stability"},
-      {"@type": "Service", "name": "O&M Pest Mitigation & Site Surveys"},
-      {"@type": "Service", "name": "Digital Reports for Solar Asset Compliance"}
-    ]
-  }
-  </script>
 </head>
 <body>
 
@@ -84,201 +34,109 @@
   </div>
   <h1>Solar Farm Pest Control Wales</h1>
   <p class="tagline">Poison-Free Protection for PV Arrays, Cables & Ground Stability Across South & Mid Wales</p>
-
-  <div class="header-cta">
-    <a href="tel:07375303124" class="primary-cta">📞 Call David – 07375 303124</a>
-    <a href="/contact.html" class="secondary-cta">Free Site Survey</a>
-  </div>
 </header>
 
 <main>
 
-  <!-- Intro -->
-  <section class="intro" style="padding:2rem; max-width:1100px; margin:0 auto;">
-    <h2>Protect Your Solar Farm the Humane, Poison-Free Way</h2>
-
-    <p><strong>Valley Pest Experts</strong> delivers specialist non-toxic pest control for solar farms and PV arrays throughout South & Mid Wales.</p>
-
-    <p>Coverage includes: Tywi Valley, Carmarthenshire, Brecon Beacons, Powys, Ammanford, Llandeilo, Cross Hands, Neath/Resolven, and emerging sites like Llanwern, Heolddu near Ferryside, Brynrhyd near Llanedi, and others amid Wales' solar boom.</p>
-
-    <p>Led by RSPH Level 2 certified David Hill, we apply Integrated Pest Management (IPM) — focusing on prevention, monitoring, humane exclusion/trapping, and habitat management with **no poisons** to safeguard biodiversity, wildlife, and compliance on eco-enhanced solar sites.</p>
-
-    <p>Sheltered panels create ideal conditions for pests: rabbits burrow causing subsidence/misalignment of mounts, rodents gnaw cables risking fires/electrical faults, moles tunnel destabilizing soil/foundations.</p>
+  <!-- Hero / Intro – Shortened to push form higher -->
+  <section class="intro" style="padding:2rem 5%; max-width:1100px; margin:0 auto; text-align:center;">
+    <h2>Protect Your Solar Farm from Pests – Humane & Poison-Free</h2>
+    <p style="font-size:1.2rem; margin:1rem 0;">Rabbits burrowing? Rodents chewing cables? Moles destabilising ground? We specialise in non-toxic IPM for solar farms across Wales – Tywi Valley, Brecon Beacons, Carmarthenshire, Powys & more.</p>
+    <p style="font-size:1.1rem; color:#555;">RSPH Level 2 certified | O&M support | Biodiversity-safe | Free site survey</p>
   </section>
 
-  <!-- Risks Section -->
-  <section class="risks" style="background:#f8f9fa; padding:2rem; margin:2rem 0;">
-    <h2>Key Solar Farm Pest Risks We Solve</h2>
+  <!-- MAIN HUBSPOT FORM – The primary focus -->
+  <section class="contact-form" style="padding:3rem 5%; background:#f0f7f0; border-radius:12px; margin:2rem 5%; box-shadow:0 6px 20px rgba(0,0,0,0.1); max-width:900px; margin-left:auto; margin-right:auto;">
+    <h2 style="font-size:2.2rem; color:#0a5c1e; margin-bottom:1rem; text-align:center;">Get Your Free Solar Farm Site Survey</h2>
+    <p style="text-align:center; font-size:1.2rem; margin-bottom:2rem; color:#333;">Fill in the quick form below – David will personally review your solar site and get back to you within hours with tailored advice and a no-obligation quote.</p>
 
+    <!-- HubSpot Form Embed -->
+    <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: "147644502",
+        formId: "9d48c029-b741-4e69-9c9d-3a9ed821a42f",
+        target: "#hubspotForm"
+      });
+    </script>
+    <div id="hubspotForm" style="min-height:400px;"></div>
+
+    <p style="text-align:center; margin-top:1.5rem; font-size:1.1rem; color:#555;">
+      Prefer to talk? <strong><a href="tel:07375303124" style="color:#c0392b; font-weight:bold;">Call David now: 07375 303124</a></strong>
+    </p>
+  </section>
+
+  <!-- Shortened Risks Section (moved below form) -->
+  <section class="risks" style="padding:2rem 5%; max-width:1100px; margin:0 auto;">
+    <h2>Key Solar Farm Pest Risks We Solve</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
       <div>
         <h3>Rodent Damage</h3>
-        <p>Rats and mice chew cables, wiring, and junction boxes — causing electrical faults, fires, and costly downtime.</p>
+        <p>Rats & mice chew cables, wiring & junction boxes – causing faults, fires & downtime.</p>
       </div>
-
       <div>
         <h3>Rabbit Burrowing</h3>
-        <p>Extensive burrows under panels lead to subsidence, misalignment, and structural instability — especially on rural greenfield sites.</p>
+        <p>Burrows under panels cause subsidence & misalignment – especially on rural sites.</p>
       </div>
-
       <div>
         <h3>Mole Tunnelling</h3>
-        <p>Moles create tunnels and molehills that destabilise foundations, cabling trenches, and ground-mounted structures.</p>
+        <p>Tunnels & molehills destabilise foundations & cabling trenches.</p>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="services" style="padding:2rem; max-width:1100px; margin:0 auto;">
-    <h2>Our Solar Farm Pest Services Across Wales</h2>
-
-    <ul class="service-list" style="list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">
-        <strong>Rodent Control</strong><br>
-        Poison-free exclusion/monitoring to safeguard cabling, inverters, wiring from gnawing/fire risks — vital for PV efficiency in Tywi Valley, Carmarthenshire, Brecon Beacons sites.
-      </li>
-
-      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">
-        <strong>Rabbit Burrowing Prevention</strong><br>
-        Humane proofing, perimeter exclusion, burrow management to prevent undermining structures — avoiding subsidence in arrays near Ammanford, Llandeilo, Powys edges.
-      </li>
-
-      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">
-        <strong>Mole Management</strong><br>
-        Discreet humane trapping to ensure ground stability around foundations/panels — countering molehills/tunnels in Brecon Beacons, Neath/Resolven solar fields.
-      </li>
-
-      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">
-        <strong>Site Surveys & O&M Support</strong><br>
-        Pre/post-install inspections, regular monitoring, emergency response to reduce downtime and extend asset lifespan across South & Mid Wales.
-      </li>
-
-      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">
-        <strong>Digital Reporting & Compliance</strong><br>
-        Audit-ready logs, photos, maps for insurance, biodiversity plans, or operators — no-poison evidence for eco-focused solar developments.
-      </li>
+  <!-- Services (shortened) -->
+  <section class="services" style="padding:2rem 5%; max-width:1100px; margin:0 auto;">
+    <h2>Our Solar Farm Pest Services</h2>
+    <ul style="list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
+      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">Rodent Control – Exclusion & monitoring for cables & wiring</li>
+      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">Rabbit Burrowing Prevention – Perimeter proofing & burrow management</li>
+      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">Mole Management – Humane trapping for ground stability</li>
+      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">Site Surveys & O&M – Pre/post-install inspections & monitoring</li>
+      <li style="background:#e8f5e9; padding:1.5rem; border-radius:8px;">Digital Reporting – Audit-ready logs & photos for compliance</li>
     </ul>
-
-    <p style="margin-top:2rem; font-weight:bold;">Flexible packages: quarterly for smaller sites or monthly/unlimited for large farms. All humane, wildlife-compliant, and aligned with Wales' renewable/biodiversity goals.</p>
   </section>
 
-  <!-- Gallery -->
-  <section class="gallery" style="padding:2rem; max-width:1100px; margin:0 auto;">
+  <!-- Gallery (shortened) -->
+  <section class="gallery" style="padding:2rem 5%; max-width:1100px; margin:0 auto;">
     <h2>Solar Farm Protection Examples</h2>
-    <div class="projects-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
-      <figure>
-        <img src="/images/solar-rabbit-burrow.jpg" alt="Rabbit burrowing prevention under solar panels Tywi Valley Carmarthenshire Wales" loading="lazy" style="width:100%; border-radius:8px;">
-        <figcaption>Rabbit Burrow Management</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/solar-rodent-cable.jpg" alt="Poison-free rodent exclusion on PV cables Brecon Beacons solar farm" loading="lazy" style="width:100%; border-radius:8px;">
-        <figcaption>Rodent Cable Protection</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/solar-mole-ground.jpg" alt="Humane mole control for solar array ground stability Powys Wales" loading="lazy" style="width:100%; border-radius:8px;">
-        <figcaption>Ground Stability Mole Control</figcaption>
-      </figure>
-      <figure>
-        <img src="/images/solar-site-survey.jpg" alt="O&M pest survey on Welsh solar farm near Ammanford Llandeilo" loading="lazy" style="width:100%; border-radius:8px;">
-        <figcaption>Site Survey & Monitoring</figcaption>
-      </figure>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+      <figure><img src="/images/solar-rabbit-burrow.jpg" alt="Rabbit burrowing prevention under solar panels" loading="lazy" style="width:100%; border-radius:8px;"><figcaption>Rabbit Burrow Management</figcaption></figure>
+      <figure><img src="/images/solar-rodent-cable.jpg" alt="Rodent exclusion on PV cables" loading="lazy" style="width:100%; border-radius:8px;"><figcaption>Rodent Cable Protection</figcaption></figure>
+      <figure><img src="/images/solar-mole-ground.jpg" alt="Mole control for solar ground stability" loading="lazy" style="width:100%; border-radius:8px;"><figcaption>Ground Stability Mole Control</figcaption></figure>
     </div>
   </section>
 
-  <!-- Coverage -->
-  <section class="coverage" style="padding:2rem; background:#f8f9fa; margin:2rem 0;">
+  <!-- Coverage (shortened) -->
+  <section class="coverage" style="padding:2rem 5%; background:#f8f9fa; margin:2rem 0;">
     <h2>Coverage – Solar Sites Across South & Mid Wales</h2>
-
-    <p>We protect solar arrays region-wide, including:</p>
-
-    <ul style="columns:3; column-gap:2rem; list-style:none; padding:0;">
-      <li>Ammanford</li>
-      <li>Llandeilo</li>
-      <li>Cross Hands</li>
-      <li>Carmarthen</li>
-      <li>Pontarddulais</li>
-      <li>Pontyberem</li>
-      <li>Tumble</li>
-      <li>Nantgaredig</li>
-      <li>Llanarthne</li>
-      <li>Capel Isaac</li>
-      <li>Pontargothi</li>
-      <li>Brechfa</li>
-      <li>Ffairfach</li>
-      <li>Brynamman</li>
-      <li>Garnant</li>
-      <li>Gwendraeth Valley</li>
-      <li>Tywi Valley</li>
-      <li>Brecon</li>
-      <li>Talgarth</li>
-      <li>Sennybridge</li>
-      <li>Builth Wells</li>
-      <li>Neath</li>
-      <li>Resolven</li>
-      <li>Llanwern/Newport area influences</li>
-    </ul>
-
-    <p style="margin-top:1.5rem;">Near landmarks: River Tywi/Towy, Dinefwr Castle, Dryslwyn Castle, Carreg Cennen Castle, National Botanic Garden of Wales, Aberglasney Gardens, Black Mountains, Tywi Valley Path.</p>
-
-    <div class="map-container" style="margin-top:2rem;">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455075.45626223437!2d-4.222843791980214!3d51.85533997180678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1769052356180!5m2!1sen!2suk" width="100%" height="400" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <p>We serve solar farms region-wide: Tywi Valley, Brecon Beacons, Carmarthenshire, Powys, Ammanford, Llandeilo, Cross Hands, Neath/Resolven & more.</p>
   </section>
 
-  <!-- Pricing -->
-  <section class="packages" style="padding:2rem; max-width:1100px; margin:0 auto;">
-    <h2>Solar Farm Protection Packages</h2>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-top:1.5rem;">
-      <div style="border:1px solid #ddd; padding:1.5rem; border-radius:8px; background:white;">
-        <h3>Essential Solar Cover</h3>
-        <p style="font-size:1.4rem; font-weight:bold; color:#0b6623;">£59/month</p>
-        <p>(Billed annually)</p>
-        <ul>
-          <li>4 quarterly inspections</li>
-          <li>Priority response</li>
-          <li>Digital logs</li>
-        </ul>
-        <a href="tel:07375303124" style="display:block; margin-top:1rem; background:#1f3b2c; color:#f4b400; padding:0.8rem; border-radius:6px; text-align:center; text-decoration:none;">Enquire Now</a>
-      </div>
-
-      <div style="border:1px solid #ddd; padding:1.5rem; border-radius:8px; background:white;">
-        <h3>Standard O&M Shield</h3>
-        <p style="font-size:1.4rem; font-weight:bold; color:#0b6623;">£139/month</p>
-        <p>(Billed annually)</p>
-        <ul>
-          <li>6 bi-monthly visits</li>
-          <li>Included emergency call-outs</li>
-          <li>Full reporting</li>
-        </ul>
-        <a href="tel:07375303124" style="display:block; margin-top:1rem; background:#1f3b2c; color:#f4b400; padding:0.8rem; border-radius:6px; text-align:center; text-decoration:none;">Enquire Now</a>
-      </div>
-
-      <div style="border:1px solid #ddd; padding:1.5rem; border-radius:8px; background:white;">
-        <h3>Complete Array Protection</h3>
-        <p style="font-size:1.4rem; font-weight:bold; color:#0b6623;">£249/month</p>
-        <p>(Billed annually)</p>
-        <ul>
-          <li>Monthly monitoring</li>
-          <li>Unlimited call-outs</li>
-          <li>Proactive mitigation</li>
-        </ul>
-        <a href="tel:07375303124" style="display:block; margin-top:1rem; background:#1f3b2c; color:#f4b400; padding:0.8rem; border-radius:6px; text-align:center; text-decoration:none;">Enquire Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
+  <!-- Secondary CTA with form repeat (reinforcement) -->
   <section class="cta" style="text-align:center; background:#1f3b2c; color:#f4b400; padding:4rem 5%; margin:3rem 0; border-radius:12px;">
-    <h2>Secure Your Solar Farm Across Wales</h2>
-    <p style="font-size:1.4rem; margin-bottom:1.5rem;">Poison-free, humane pest management for rabbits, rodents, moles – by David Hill. Free no-obligation site survey anywhere in South & Mid Wales.</p>
-    <p style="font-size:2.5rem; margin:1.5rem 0; font-weight:bold;">Call Now: 07375 303124</p>
-    <a href="tel:07375303124" style="display:inline-block; background:#f4b400; color:#1f3b2c; padding:1.2rem 3rem; border-radius:50px; font-weight:700; font-size:1.6rem; text-decoration:none; box-shadow:0 6px 20px rgba(0,0,0,0.3);">
-      Speak to David – Free Quote
+    <h2>Ready to Protect Your Solar Farm?</h2>
+    <p style="font-size:1.4rem; margin-bottom:2rem;">Get your free site survey – quick form below or call me directly.</p>
+
+    <!-- Repeat HubSpot Form -->
+    <div style="max-width:700px; margin:0 auto;">
+      <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "eu1",
+          portalId: "147644502",
+          formId: "9d48c029-b741-4e69-9c9d-3a9ed821a42f",
+          target: "#hubspotFormSecondary"
+        });
+      </script>
+      <div id="hubspotFormSecondary" style="min-height:400px;"></div>
+    </div>
+
+    <p style="margin-top:2rem; font-size:1.8rem; font-weight:bold;">Or call now: 07375 303124</p>
+    <a href="tel:07375303124" style="display:inline-block; background:#f4b400; color:#1f3b2c; padding:1rem 2.5rem; border-radius:50px; font-weight:700; font-size:1.5rem; text-decoration:none; margin-top:1rem;">
+      Call David – Free Quote
     </a>
-    <p style="margin-top:2rem; font-size:1.2rem;">
-      <a href="/contact.html" style="color:#f4b400; text-decoration:underline;">Or send a quick enquiry form</a>
-    </p>
   </section>
 
 </main>
