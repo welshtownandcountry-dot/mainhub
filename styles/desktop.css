@@ -33,11 +33,12 @@ a:hover {
 .site-header {
   background-color: #ffffff;
   border-bottom: 3px solid #1f3b2c;
-  padding: 1.5rem 5%;
+  padding: 2rem 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 0.5rem;
 }
 
 .logo-container img {
@@ -46,13 +47,13 @@ a:hover {
 }
 
 .site-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
 .site-header .tagline {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 1rem;
   color: #3a5a40;
@@ -68,8 +69,9 @@ a:hover {
 
 .header-cta a {
   padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .header-cta .primary-cta {
@@ -77,9 +79,17 @@ a:hover {
   color: #1f3b2c;
 }
 
+.header-cta .primary-cta:hover {
+  background-color: #e0a600;
+}
+
 .header-cta .secondary-cta {
   background-color: #1f3b2c;
   color: #ffffff;
+}
+
+.header-cta .secondary-cta:hover {
+  background-color: #16301f;
 }
 
 /* ---------- SERVICE HUBS ---------- */
@@ -90,8 +100,9 @@ a:hover {
 }
 
 .service-hubs h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
+  color: #1f3b2c;
 }
 
 .link-grid {
@@ -102,39 +113,48 @@ a:hover {
 
 .link-grid a {
   background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 1.2rem;
+  border-radius: 10px;
   border: 1px solid #ddd;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .link-grid a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background-color: #fdfdfd;
 }
 
 /* ---------- ABOUT / TEXT ---------- */
 .about {
   padding: 3rem 5%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .about h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1.5rem;
   text-align: center;
   color: #1f3b2c;
 }
 
 .about-text p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   line-height: 1.8;
+  font-size: 1rem;
 }
 
 .about-text ul.service-list {
   margin: 1.5rem 0;
   list-style-type: disc;
   padding-left: 2rem;
+  font-size: 1rem;
 }
 
 /* ---------- COVERAGE LIST ---------- */
@@ -156,39 +176,48 @@ a:hover {
 /* ---------- SERVICES GALLERY ---------- */
 .services-gallery {
   padding: 3rem 5%;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
 .services-gallery h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: #1f3b2c;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .projects-grid figure {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-grid figure:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
 .projects-grid img {
   width: 100%;
   display: block;
   border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.projects-grid figure:hover img {
+  transform: scale(1.05);
 }
 
 .projects-grid figcaption {
@@ -199,9 +228,12 @@ a:hover {
 
 /* ---------- BADGE SECTION ---------- */
 .badge-section {
-  padding: 2rem 5%;
+  padding: 3rem 5%;
   background-color: #e6f0e6;
   text-align: center;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
 }
 
 .badge-section img.rsph-badge {
@@ -210,7 +242,7 @@ a:hover {
 }
 
 .badge-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -235,7 +267,7 @@ a:hover {
   width: 100%;
   height: 450px;
   border: 3px solid #1f3b2c;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -243,11 +275,12 @@ a:hover {
   background-color: #1f3b2c;
   color: #ffffff;
   text-align: center;
-  padding: 2rem 5%;
+  padding: 2.5rem 5%;
 }
 
 .site-footer a {
   color: #f4b400;
+  font-weight: 600;
 }
 
 .site-footer .small-print {
@@ -259,15 +292,15 @@ a:hover {
 /* ---------- MOBILE FLOAT CALL BUTTON ---------- */
 .mobile-call-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: #f4b400;
   color: #1f3b2c;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 1rem;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
   z-index: 9999;
   transition: transform 0.2s ease;
 }
