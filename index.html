@@ -40,6 +40,15 @@
     .about-text { font-size: 1.05rem; max-width: 900px; margin: 0 auto; }
     .about-text p { margin-bottom: 1.4rem; }
 
+    .coverage-list {
+      columns: 3;
+      column-gap: 2rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .coverage-list li { margin-bottom: 0.8rem; font-size: 1.05rem; }
+
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
     figure { margin: 0; text-align: center; border: 1px solid #eee; padding: 10px; border-radius: 8px; transition: transform 0.3s; background: #fff; }
     figure:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
@@ -64,6 +73,11 @@
       .header-cta { flex-direction: column; }
       header { padding: 1.8rem 1rem 1.5rem; }
       .logo-container { max-width: 280px; }
+      .coverage-list { columns: 1; }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .coverage-list { columns: 2; }
     }
   </style>
 </head>
@@ -106,13 +120,47 @@
       <p>We also handle related rural pests such as squirrels in barns, pigeons in feed stores, and occasional bird or fox issues when they impact farm operations — always with humane, compliant methods.</p>
 
       <p><strong>Where we cover</strong>: We proudly serve the whole of South and Mid Wales, with a strong focus on rural and agricultural heartlands. Our main service footprint includes:</p>
-      <ul>
-        <li><strong>Carmarthenshire</strong> (Ammanford, Llandeilo, Cross Hands, Pontarddulais, Pontyberem, Tumble, Carmarthen, Llanelli, Brynamman, Gwendraeth Valley, Tywi Valley)</li>
-        <li><strong>Neath Port Talbot & Swansea Valley</strong> (Neath, Pontardawe, Clydach, Gorseinon, Resolven and surrounding valleys)</li>
-        <li><strong>Powys & Brecon Beacons</strong> (Brecon, Crickhowell, Talgarth, Sennybridge, Builth Wells, Ystradgynlais, and lower Mid Wales rural areas)</li>
-        <li><strong>Merthyr Tydfil & surrounding valleys</strong> (Merthyr Tydfil and nearby agricultural land)</li>
-      </ul>
+    </div>
 
+    <div class="coverage-list">
+      <ul>
+        <li>Ammanford</li>
+        <li>Llandeilo</li>
+        <li>Cross Hands</li>
+        <li>Pontarddulais</li>
+        <li>Pontyberem</li>
+        <li>Tumble</li>
+        <li>Carmarthen</li>
+        <li>Llanelli</li>
+        <li>Brynamman</li>
+        <li>Gwendraeth Valley</li>
+        <li>Tywi Valley</li>
+        <li>Neath</li>
+        <li>Pontardawe</li>
+        <li>Clydach</li>
+        <li>Gorseinon</li>
+        <li>Resolven</li>
+        <li>Brecon</li>
+        <li>Crickhowell</li>
+        <li>Talgarth</li>
+        <li>Sennybridge</li>
+        <li>Builth Wells</li>
+        <li>Ystradgynlais</li>
+        <li>Merthyr Tydfil</li>
+        <li>Llanidloes (Mid Wales fringe)</li>
+        <li>Llandovery</li>
+        <li>Llangadog</li>
+        <li>Capel Hendre</li>
+        <li>Saron</li>
+        <li>Garnant</li>
+        <li>Gwaun-Cae-Gurwen</li>
+        <li>Ffairfach</li>
+        <li>Derwydd</li>
+        <li>Pen-y-groes</li>
+      </ul>
+    </div>
+
+    <div class="about-text">
       <p>We regularly travel throughout these regions and are happy to cover any rural or farm location in South and Mid Wales where our expertise is needed. Travel time is never a barrier — we’re committed to supporting Welsh agriculture and renewable energy wherever it’s based.</p>
 
       <p>What sets us apart is our refusal to use poisons. With upcoming CRRU guideline changes and growing pressure on farm assurance schemes to reduce chemical use, we help clients stay ahead of compliance while protecting the environment, watercourses, and non-target species. Every site visit includes detailed reporting, so you have clear evidence for audits, insurance, or grant applications.</p>
@@ -126,7 +174,7 @@
   <section>
     <h2>Expert Agricultural & Solar Services</h2>
     <p>From full site inspections to perimeter protection and mole management, we handle the issues that matter most to Welsh farms and renewable sites.</p>
-    
+   
     <div class="projects-grid">
       <figure>
         <img src="/images/technician-solar-inspection.jpg" alt="Solar Inspection">
