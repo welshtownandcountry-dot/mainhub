@@ -33,7 +33,7 @@ a:hover {
 .site-header {
   background-color: #ffffff;
   border-bottom: 3px solid #1f3b2c;
-  padding: 2rem 5%;
+  padding: 1.5rem 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,36 +42,35 @@ a:hover {
 }
 
 .logo-container img {
-  max-width: 150px; /* smaller logo for tidier header */
-  margin-bottom: 1rem;
+  max-width: 120px; /* smaller logo */
+  margin-bottom: 0.8rem;
 }
 
 .site-header h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
 .site-header .tagline {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #3a5a40;
 }
 
 .header-cta {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .header-cta a {
-  padding: 0.7rem 1.2rem; /* slightly smaller buttons */
+  padding: 0.6rem 1rem; /* smaller buttons */
   border-radius: 6px;
   font-weight: 600;
-  transition: all 0.3s ease;
 }
 
 .header-cta .primary-cta {
@@ -95,26 +94,26 @@ a:hover {
 /* ---------- SERVICE HUBS ---------- */
 .service-hubs {
   background-color: #e6f0e6;
-  padding: 2.5rem 5%;
+  padding: 2rem 5%;
   text-align: center;
 }
 
 .service-hubs h2 {
-  font-size: 2rem;
-  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
   color: #1f3b2c;
 }
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
 }
 
 .link-grid a {
   background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
+  padding: 0.9rem;
+  border-radius: 8px;
   border: 1px solid #ddd;
   font-weight: 600;
   text-align: center;
@@ -122,82 +121,83 @@ a:hover {
 }
 
 .link-grid a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   background-color: #fdfdfd;
 }
 
 /* ---------- ABOUT / TEXT ---------- */
 .about {
-  padding: 2.5rem 5%;
+  padding: 2rem 5%;
   background-color: #ffffff;
-  border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 1100px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  max-width: 1000px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 .about h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
   text-align: center;
   color: #1f3b2c;
 }
 
 .about-text p {
-  margin-bottom: 1.2rem;
-  line-height: 1.7;
-  font-size: 0.98rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 .about-text ul.service-list {
-  margin: 1.2rem 0;
+  margin: 1rem 0;
   list-style-type: disc;
   padding-left: 2rem;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
 }
 
 /* ---------- COVERAGE LIST ---------- */
 .coverage-list {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .coverage-list ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.5rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.4rem 1rem;
   list-style: circle;
   color: #3a5a40;
   font-weight: 500;
+  font-size: 0.95rem;
 }
 
 /* ---------- SERVICES GALLERY ---------- */
 .services-gallery {
-  padding: 2.5rem 5%;
+  padding: 2rem 5%;
   background-color: #f9f9f9;
-  border-radius: 10px;
-  margin: 2rem auto;
-  max-width: 1100px;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  max-width: 1000px;
 }
 
 .services-gallery h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
   color: #1f3b2c;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* smaller images */
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
 }
 
 .projects-grid figure {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #ddd;
   background-color: #ffffff;
   text-align: center;
@@ -205,71 +205,71 @@ a:hover {
 }
 
 .projects-grid figure:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 .projects-grid img {
-  width: 95%; /* slightly smaller for tidier layout */
-  margin: 0 auto;
+  width: 90%;
+  margin: 0.5rem auto;
   display: block;
   border-bottom: 1px solid #ddd;
   transition: transform 0.3s ease;
 }
 
 .projects-grid figure:hover img {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .projects-grid figcaption {
-  padding: 0.6rem;
+  padding: 0.5rem;
   font-weight: 600;
   color: #1f3b2c;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 /* ---------- BADGE SECTION ---------- */
 .badge-section {
-  padding: 2.5rem 5%;
+  padding: 1.8rem 5%;
   background-color: #e6f0e6;
   text-align: center;
-  border-radius: 10px;
-  margin: 1.8rem auto;
-  max-width: 750px;
+  border-radius: 8px;
+  margin: 1.2rem auto;
+  max-width: 700px;
 }
 
 .badge-section img.rsph-badge {
-  max-width: 80px; /* smaller badge */
-  margin-bottom: 0.8rem;
+  max-width: 60px; /* smaller badge */
+  margin-bottom: 0.6rem;
 }
 
 .badge-section h3 {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
 }
 
 .badge-section p {
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* ---------- MAP SECTION ---------- */
 .map-section {
-  padding: 2.5rem 5%;
+  padding: 2rem 5%;
 }
 
 .map-section h2 {
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .map-container iframe {
   width: 100%;
-  height: 400px; /* slightly smaller */
+  height: 350px; /* smaller map */
   border: 3px solid #1f3b2c;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -277,7 +277,7 @@ a:hover {
   background-color: #1f3b2c;
   color: #ffffff;
   text-align: center;
-  padding: 2rem 5%;
+  padding: 1.5rem 5%;
 }
 
 .site-footer a {
@@ -288,21 +288,21 @@ a:hover {
 .site-footer .small-print {
   font-size: 0.78rem;
   opacity: 0.7;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 /* ---------- MOBILE FLOAT CALL BUTTON ---------- */
 .mobile-call-float {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 20px;
+  right: 20px;
   background-color: #f4b400;
   color: #1f3b2c;
-  padding: 0.8rem 0.95rem;
+  padding: 0.65rem 0.8rem;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   z-index: 9999;
   transition: transform 0.2s ease;
 }
