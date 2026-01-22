@@ -76,16 +76,67 @@
       list-style: disc;
       padding-left: 1.5rem;
     }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .pricing-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .pricing-card h3 {
+      color: #1f3b2c;
+      margin: 0 0 1rem;
+      font-size: 1.6rem;
+    }
+    .pricing-card .price {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #1f3b2c;
+      margin: 0.5rem 0;
+    }
+    .pricing-card .price small {
+      font-size: 1rem;
+      font-weight: normal;
+      color: #555;
+    }
+    .pricing-card ul {
+      text-align: left;
+      margin: 1.5rem 0;
+    }
+    .pricing-card .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.8rem;
+      background: #f4b400;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .pricing-card .cta:hover {
+      background: #d49a00;
+    }
     footer { background: #1f3b2c; color: #fff; text-align: center; padding: 1.5rem 1rem; }
     footer a { color: #f4b400; text-decoration: none; font-weight: bold; margin: 0 0.6rem; }
     footer a:hover { text-decoration: underline; }
     @media (min-width: 768px) {
       .coverage-list { columns: 3; }
+      .pricing-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
       header { padding: 2.5rem 2rem; }
       main { padding: 2.5rem 2rem; }
     }
     @media (max-width: 480px) {
       header h1 { font-size: 1.9rem; }
+      .pricing-card h3 { font-size: 1.4rem; }
+      .pricing-card .price { font-size: 1.8rem; }
       .coverage-list { columns: 1; }
     }
   </style>
@@ -96,7 +147,7 @@
   <p>Poison-Free Integrated Pest Management (IPM) for Agricultural Land</p>
   <p>Rodent • Mole • Rabbit Control • Red Tractor & SALSA Ready</p>
   <a href="tel:07375303124">📞 Call David: 07375 303124 for Farm Survey</a>
-  <a href="https://www.valleypestexperts.co.uk/">Back to Main Hub</a> | 
+  <a href="https://www.valleypestexperts.co.uk/">Back to Main Hub</a> |
   <a href="https://www.valleypestexperts.co.uk/solar-farm-pest-control.html">Solar Farm Pest Protection</a>
 </header>
 <main>
@@ -136,6 +187,71 @@
       <li>Neath</li>
     </ul>
     <p style="margin-top: 1rem;">This is a selection of the many locations we regularly cover. If your farm is in or near these areas (or anywhere in South & Mid Wales), call for a free initial assessment.</p>
+  </section>
+
+  <section>
+    <h2>Our Farm Pest Control Packages</h2>
+    <p>Choose the plan that best fits your farm’s needs. All packages are poison-free, IPM-focused, and include audit-ready documentation for Red Tractor & SALSA compliance. Mole catching is included during routine visits across all plans.</p>
+    <div class="pricing-grid">
+      <!-- Package 1 -->
+      <div class="pricing-card">
+        <h3>Essential Farm Cover</h3>
+        <div class="price">£49<span style="font-size:1rem;">/month</span></div>
+        <p style="font-size:0.95rem; color:#555;">(Billed annually: £588/year)</p>
+        <ul>
+          <li>4 scheduled routine visits per year (quarterly)</li>
+          <li>Priority response on call-outs (48–72 hours)</li>
+          <li>Discounted emergency visits: £95 each</li>
+          <li>Moles during routine visits: <strong>Included</strong></li>
+          <li>Extra moles outside routines: <strong>£12 per mole</strong> + £95 call-out</li>
+          <li>Basic digital pest logs for audits</li>
+          <li>Unlimited phone/email advice</li>
+        </ul>
+        <p><strong>Best for:</strong> Smaller farms or occasional pest issues</p>
+        <a href="tel:07375303124" class="cta">Call to Start This Plan</a>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="pricing-card">
+        <h3>Standard Farm Protection</h3>
+        <div class="price">£119<span style="font-size:1rem;">/month</span></div>
+        <p style="font-size:0.95rem; color:#555;">(Billed annually: £1,428/year)</p>
+        <ul>
+          <li>6 scheduled routine visits per year (every 2 months)</li>
+          <li>Up to 6 included emergency call-outs per year</li>
+          <li>Extra call-outs at £85 each</li>
+          <li>Moles during routine visits: <strong>Included</strong></li>
+          <li>Extra moles outside routines: <strong>£8 per mole</strong> + £85 call-out (if beyond 6)</li>
+          <li>Full Red Tractor/SALSA audit package</li>
+          <li>Priority 24–48 hour response</li>
+          <li>Free mid-year pest risk review</li>
+        </ul>
+        <p><strong>Best for:</strong> Mid-sized farms with moderate pressure or audit needs</p>
+        <a href="tel:07375303124" class="cta">Call to Start This Plan</a>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="pricing-card">
+        <h3>Complete Farm & Solar Shield</h3>
+        <div class="price">£219<span style="font-size:1rem;">/month</span></div>
+        <p style="font-size:0.95rem; color:#555;">(Billed annually: £2,628/year)</p>
+        <ul>
+          <li>12 monthly routine/preventive visits</li>
+          <li>Unlimited emergency call-outs (fair-use after 12/year)</li>
+          <li>Same-day/next-day priority response</li>
+          <li>Moles: <strong>Unlimited included</strong> (fair-use applies)</li>
+          <li>Complete Red Tractor/SALSA + insurance compliance package</li>
+          <li>Solar/PV array checks included</li>
+          <li>Dedicated digital portal for reports & history</li>
+        </ul>
+        <p><strong>Best for:</strong> Larger farms, solar sites or high-risk properties</p>
+        <a href="tel:07375303124" class="cta">Call to Start This Plan</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:1.5rem; font-size:1.1rem;">
+      All packages include poison-free methods and compliance documentation.  
+      <strong>Call David on 07375 303124</strong> for a no-obligation chat about the best fit for your farm.
+    </p>
   </section>
 
   <section>
