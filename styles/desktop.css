@@ -1,6 +1,6 @@
 /* ============================================================
    DESKTOP.CSS - Valley Pest Experts
-   Optimized Slimline Header Edition
+   Final Slimline Edition: Ultra-Compact Header & Modern Layout
    ============================================================ */
 
 :root {
@@ -18,6 +18,7 @@
   --transition: all 0.3s ease-in-out;
 }
 
+/* --- Performance Reset --- */
 * {
   margin: 0;
   padding: 0;
@@ -32,111 +33,148 @@ body {
   line-height: 1.6;
 }
 
-/* --- Slim Header --- */
+/* --- Ultra-Slim Header --- */
 .site-header {
   background: var(--white);
-  padding: 0.5rem 0; /* Reduced from 1rem */
+  padding: 0.4rem 0; /* Minimal vertical padding */
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: var(--shadow-sm);
+  width: 100%;
 }
 
 .header-inner {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: center; /* Keeps everything vertically centered */
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  gap: 15px;
 }
 
 .logo-group {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-shrink: 0; /* Prevents logos from squishing */
 }
 
-.main-logo { height: 45px; width: auto; } /* Shrunk from 65px */
-.cert-badge { height: 40px; width: auto; } /* Shrunk from 55px */
+.main-logo { height: 40px; width: auto; } /* Professional compact height */
+.cert-badge { height: 35px; width: auto; } 
+
+.header-text {
+  flex-shrink: 0;
+}
 
 .header-text h1 {
-  font-size: 1.2rem; /* Shrunk from 1.6rem */
+  font-size: 1.1rem; /* Smaller, punchy size */
   color: var(--primary);
   font-weight: 800;
   margin: 0;
-  line-height: 1;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .tagline {
-  font-size: 0.75rem; /* Shrunk from 0.85rem */
+  font-size: 0.7rem;
   color: var(--text-light);
   font-weight: 600;
   margin: 0;
+  white-space: nowrap;
 }
 
-/* --- Compact Navigation --- */
+/* --- Horizontal Compact Navigation --- */
+.site-nav {
+  flex-grow: 1; /* Allows nav to take up middle space */
+  display: flex;
+  justify-content: center;
+}
+
 .main-nav {
   list-style: none;
   display: flex;
-  gap: 15px; /* Tighter gap */
+  gap: 18px;
 }
 
 .main-nav a {
   text-decoration: none;
   color: var(--primary);
   font-weight: 700;
-  font-size: 0.8rem; /* Smaller font */
+  font-size: 0.75rem; /* Smaller text for a sleeker look */
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   transition: var(--transition);
+  padding: 5px 0;
 }
 
 .main-nav a:hover { color: var(--accent-gold); }
 
-/* --- Tighter CTA Buttons --- */
-.header-cta { display: flex; gap: 8px; }
+/* --- Compact Header CTAs --- */
+.header-cta { 
+  display: flex; 
+  gap: 8px; 
+  flex-shrink: 0;
+}
 
 .primary-cta, .secondary-cta {
-  padding: 0.5rem 1rem; /* Much smaller padding */
-  border-radius: 4px; /* Sharper, modern look */
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
   font-weight: 800;
   text-decoration: none;
   font-size: 0.75rem;
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .primary-cta { background: var(--accent-gold); color: var(--primary); }
 .secondary-cta { background: var(--primary); color: var(--white); }
 
 .primary-cta:hover, .secondary-cta:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.1);
+  transform: translateY(-1px);
+  filter: brightness(1.05);
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section - Focused Content --- */
 .hero-banner {
-  background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(27, 67, 50, 0.85)), 
+  background: linear-gradient(rgba(27, 67, 50, 0.8), rgba(27, 67, 50, 0.8)), 
               url('/images/mole-farm.jpg') center/cover no-repeat;
-  padding: 80px 10%; /* Reduced padding */
+  padding: 60px 10%; /* Optimized padding to not push content too far down */
   text-align: center;
   color: var(--white);
 }
 
 .hero-content h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: var(--accent-gold);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
 }
 
-/* --- Services Gallery --- */
-.services-gallery { padding: 60px 5%; }
-.section-title { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 40px; }
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
+/* --- Layout Sections --- */
+.services-gallery, .detailed-content, .map-section {
+  padding: 60px 5%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 35px;
+}
+
+/* --- Image & Card Grids --- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -149,25 +187,76 @@ body {
   transition: var(--transition);
 }
 
-.projects-grid figure:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
-.img-container { height: 200px; overflow: hidden; }
+.img-container { height: 180px; overflow: hidden; }
 .img-container img { width: 100%; height: 100%; object-fit: cover; }
-figcaption { padding: 20px; }
-figcaption h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 5px; }
+figcaption { padding: 15px; }
+figcaption h3 { color: var(--primary); font-size: 1rem; margin-bottom: 5px; }
+figcaption p { font-size: 0.85rem; line-height: 1.4; }
 
-/* --- Content Split --- */
-.detailed-content { background: var(--white); padding: 80px 5%; }
-.content-wrapper { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr; gap: 50px; }
+/* --- Split Content Wrapper --- */
+.content-wrapper { 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  display: grid; 
+  grid-template-columns: 1.4fr 1fr; 
+  gap: 40px; 
+}
+
+.feature-box {
+  background: var(--bg-light);
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--accent-gold);
+}
+
+.check-list { list-style: none; margin-top: 15px; }
+.check-list li { margin-bottom: 10px; font-weight: 600; font-size: 0.9rem; }
+
+/* --- Map --- */
+.map-container { 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  border-radius: var(--radius-lg); 
+  overflow: hidden; 
+  box-shadow: var(--shadow-md); 
+}
 
 /* --- Footer --- */
-.site-footer { background: var(--primary); color: var(--white); padding: 60px 5% 30px; text-align: center; }
-.hub-links { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
-.hub-links a { color: white; text-decoration: none; font-size: 0.8rem; padding: 5px 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; }
+.site-footer { 
+  background: var(--primary); 
+  color: var(--white); 
+  padding: 40px 5% 20px; 
+  text-align: center; 
+}
 
-.footer-tel a { color: var(--accent-gold); text-decoration: none; font-size: 1.2rem; font-weight: 800; }
+.hub-links { 
+  list-style: none; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+  margin: 15px 0; 
+}
 
+.hub-links a { 
+  color: white; 
+  text-decoration: none; 
+  font-size: 0.75rem; 
+  padding: 4px 10px; 
+  border: 1px solid rgba(255,255,255,0.2); 
+  border-radius: 4px; 
+}
+
+.footer-tel a { 
+  color: var(--accent-gold); 
+  text-decoration: none; 
+  font-size: 1.2rem; 
+  font-weight: 800; 
+}
+
+/* --- Reveal Animation --- */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
-main section { animation: fadeInUp 0.6s ease-out forwards; }
+main section { animation: fadeInUp 0.5s ease-out forwards; }
