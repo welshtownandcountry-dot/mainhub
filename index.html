@@ -17,13 +17,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root {
-  --green: #0b6623;
-  --dark: #083d14;
-  --blue: #0066cc;
-  --red: #d32f2f;
-  --gold: #ffcc00;
-  --bg: #f8f9fa;
-  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+    --green: #0b6623;
+    --dark: #083d14;
+    --blue: #0066cc;
+    --red: #d32f2f;
+    --gold: #ffcc00;
+    --bg: #f8f9fa;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 * { box-sizing: border-box; margin:0; padding:0; }
 html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
@@ -48,248 +48,250 @@ header { background:linear-gradient(135deg,var(--dark)0%,var(--blue)100%); color
 .links-section a:hover { text-decoration:underline;}
 footer { background:#111; color:white; padding:4rem 1.5rem; text-align:center; border-top:8px solid var(--gold);}
 footer a { color:var(--gold); text-decoration:none; font-weight:bold;}
-@media(max-width:768px){ .header-phone{font-size:1.6rem;} .card a{font-size:1.2rem;} .links-section ul{columns:1;}}
-details { margin-bottom: 1rem; background: white; border-radius: 8px; box-shadow: var(--shadow); }
-summary { padding: 1rem; font-weight: 600; cursor: pointer; color: var(--green); }
-details p { padding: 0 1rem 1rem; }
+
+/* FAQ Styles */
+.faq-container { background:white; border-radius:20px; box-shadow:var(--shadow); padding:2rem; margin-top:2rem; }
+.faq-item { margin-bottom:1rem; border-bottom:1px solid #eee; padding-bottom:1rem; }
+.faq-question { font-weight:800; color:var(--green); margin-bottom:0.5rem; font-size:1.1rem; }
+.faq-answer { color:#444; }
+
+/* Map Container */
+.map-container { margin:3rem auto; text-align:center; max-width:1200px; padding:0 1.5rem; }
+.map-container h2 { color:var(--dark); margin-bottom:1.5rem; font-size:2rem; }
+.google-map { border-radius:15px; overflow:hidden; box-shadow:var(--shadow); border:5px solid white; }
+
+@media(max-width:768px){ 
+    .header-phone{font-size:1.6rem;} 
+    .card a{font-size:1.2rem;} 
+    .links-section ul{columns:1;}
+    .faq-container { padding:1rem; }
+    .google-map iframe { height:300px; }
+}
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What areas do you serve in Wales?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We provide pest control services across South and Mid Wales, including Neath, Merthyr Tydfil, Brecon, Ammanford, and surrounding areas like Resolven, Glynneath, Skewen, Aberfan, Rhymney, Llandeilo, and Crickhowell."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are your pest control methods poison-free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we specialize in poison-free rodent control and CRRU compliance, ensuring safe and environmentally friendly pest management."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does wasp nest removal cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our wasp nest removal is priced at a fixed £80 per nest, with additional nests on the same site costing £20 each."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide services for farms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer audit-ready pest management for farms, including rodent proofing, mole catching, rabbit management, and Red Tractor compliance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is your experience in pest control?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Operated by David Hill with over 30 years of experience (Ex-Pestokil), we provide expert pest eradication services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are you available 24/7?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer 24/7 emergency pest control services. Call us at 07375 303124 for immediate assistance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer audit-ready pest management for Red Tractor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our farm pest control services are designed to meet Red Tractor audit requirements for 2026 and beyond."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you handle mole catching?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We use traditional mole catching methods as part of our rural and farm pest management services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What services do you provide for solar farms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We protect solar assets with rodent proofing for cable trays and inverter housings, perimeter monitoring, and 24/7 rapid response."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are you fully insured?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we are fully insured and RSPH SUoR certified for all our pest control services."
-      }
-    }
-  ]
+  "@type": "LocalBusiness",
+  "name": "Welsh Town and Country Pest Services",
+  "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
+  "@id": "https://www.welshtownandcountry.co.uk",
+  "url": "https://www.welshtownandcountry.co.uk/",
+  "telephone": "+447375303124",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Neath",
+    "addressRegion": "South Wales",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.6638,
+    "longitude": -3.8044
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "sameAs": [
+    "https://www.google.com/maps?cid=14588226068222627931"
+  ],
+  "priceRange": "££"
 }
 </script>
 </head>
 <body>
 <header>
-  <div class="container">
-    <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" style="max-width:200px;">
-    <p><a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a></p>
-  </div>
+    <div class="container">
+        <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" style="max-width:200px;">
+        <h1>Welsh Town and Country Pest Services</h1>
+        <p>30+ Years Experience | Poison-Free Solutions | 24/7 Emergency Response</p>
+        <p><a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a></p>
+    </div>
 </header>
+
 <main class="container">
-  <section class="section">
-    <h1>Welsh Town and Country Pest Services Hub</h1>
-    <p>Welcome to the master hub for all services and locations. Operated by <strong>David Hill</strong> (Ex-Pestokil) with over 30 years of experience in poison-free pest control, mole catching, and audit-ready farm protection across South & Mid Wales.</p>
-  </section>
-  <!-- Services -->
-  <section class="grid section">
-    <div class="card">
-      <h3>🌾 Farms & Rural</h3>
-      <p>Audit-ready pest management for farms and rural properties, including mole catching, rodent proofing, and Red Tractor compliance.</p>
-      <ul>
-        <li>Feed store rodent proofing</li>
-        <li>Traditional mole catching</li>
-        <li>Rabbit & wildlife management</li>
-        <li>Poison-free CRRU compliance</li>
-      </ul>
-      <a href="/farm-pest-management.html">View Farm Services →</a>
-    </div>
-    <div class="card">
-      <h3>☀️ Solar Asset Protection</h3>
-      <p>Protecting PV arrays and renewable energy infrastructure from rodents using permanent exclusion methods.</p>
-      <ul>
-        <li>Cable tray rodent proofing</li>
-        <li>Smart inverter housing exclusion</li>
-        <li>Perimeter monitoring</li>
-        <li>24/7 rapid response</li>
-      </ul>
-      <a href="/solar-farm-pest-control.html">View Solar Services →</a>
-    </div>
-    <div class="card">
-      <h3>🏠 Homes & Holiday Lets</h3>
-      <p>Specialist residential protection with root cause identification and prevention of pest recurrence.</p>
-      <ul>
-        <li>Rat-proofing kitchens & lofts</li>
-        <li>CCTV drain surveys</li>
-        <li>Stainless steel rat valves</li>
-        <li>Rent Smart Wales compliance</li>
-      </ul>
-      <a href="/holiday-homes-pest-control.html">View Residential Services →</a>
-    </div>
-    <div class="card">
-      <h3>🍔 Takeaways & Shops</h3>
-      <p>Commercial contracts for local businesses, discreet visits, and full reporting for EHO inspections.</p>
-      <ul>
-        <li>Fly & wasp control</li>
-        <li>Electronic fly killers (EFK)</li>
-        <li>Cockroach & store pest eradication</li>
-        <li>Cost-effective service</li>
-      </ul>
-      <a href="https://ammanford.valleypestexperts.co.uk/">View Commercial Hub →</a>
-    </div>
-    <div class="card">
-      <h3>🐝 Wasps & Hornets</h3>
-      <p>Rapid removal and nest management for homes, businesses, and holiday lets.</p>
-      <ul>
-        <li>£80 fixed price per nest</li>
-        <li>£20 for additional nests on same site</li>
-      </ul>
-      <a href="/wasp-control.html">Book Wasp Service →</a>
-    </div>
-  </section>
-  <!-- Regional Hubs -->
-  <section class="section links-section">
-    <h2>📍 Regional & Town Hubs</h2>
-    <ul>
-      <li><strong>Regional Hub Sites:</strong></li>
-      <li><a href="https://ammanford.valleypestexperts.co.uk/">Ammanford Experts</a></li>
-      <li><a href="https://neathporttalbot.valleypestexperts.co.uk/">Neath Port Talbot Hub</a></li>
-      <li><a href="https://merthyrtydfil.valleypestexperts.co.uk/">Merthyr Tydfil Hub</a></li>
-      <li><a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Beacons Hub</a></li>
-      <li><a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a></li>
-      <li><strong>Neath & Valleys:</strong></li>
-      <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control.html">Resolven (SA11)</a></li>
-      <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control.html">Glynneath (SA11)</a></li>
-      <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control.html">Skewen (SA10)</a></li>
-      <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/briton-ferry-rat-control.html">Briton Ferry</a></li>
-      <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control.html">Tonna (SA11)</a></li>
-      <li><strong>Merthyr & Heads:</strong></li>
-      <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/aberfan-troedyrhiw-cf48.html">Aberfan (CF48)</a></li>
-      <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/nelson-cf46.html">Nelson (CF46)</a></li>
-      <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/rhymney-np22.html">Rhymney (NP22)</a></li>
-      <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/dowlais-gurnos-cf48.html">Dowlais (CF48)</a></li>
-      <li><strong>Tywi & Beacons:</strong></li>
-      <li><a href="https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html">Llandeilo (SA19)</a></li>
-      <li><a href="https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html">Sennybridge (LD3)</a></li>
-      <li><a href="https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html">Crickhowell (NP8)</a></li>
-      <li><a href="https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html">Llangadog (SA19)</a></li>
-    </ul>
-  </section>
-  <!-- FAQ Section -->
-  <section class="section" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-      <summary>What areas do you serve in Wales?</summary>
-      <p>We provide pest control services across South and Mid Wales, including Neath, Merthyr Tydfil, Brecon, Ammanford, and surrounding areas like Resolven, Glynneath, Skewen, Aberfan, Rhymney, Llandeilo, and Crickhowell.</p>
-    </details>
-    <details>
-      <summary>Are your pest control methods poison-free?</summary>
-      <p>Yes, we specialize in poison-free rodent control and CRRU compliance, ensuring safe and environmentally friendly pest management.</p>
-    </details>
-    <details>
-      <summary>How much does wasp nest removal cost?</summary>
-      <p>Our wasp nest removal is priced at a fixed £80 per nest, with additional nests on the same site costing £20 each.</p>
-    </details>
-    <details>
-      <summary>Do you provide services for farms?</summary>
-      <p>Yes, we offer audit-ready pest management for farms, including rodent proofing, mole catching, rabbit management, and Red Tractor compliance.</p>
-    </details>
-    <details>
-      <summary>What is your experience in pest control?</summary>
-      <p>Operated by David Hill with over 30 years of experience (Ex-Pestokil), we provide expert pest eradication services.</p>
-    </details>
-    <details>
-      <summary>Are you available 24/7?</summary>
-      <p>Yes, we offer 24/7 emergency pest control services. Call us at 07375 303124 for immediate assistance.</p>
-    </details>
-    <details>
-      <summary>Do you offer audit-ready pest management for Red Tractor?</summary>
-      <p>Yes, our farm pest control services are designed to meet Red Tractor audit requirements for 2026 and beyond.</p>
-    </details>
-    <details>
-      <summary>How do you handle mole catching?</summary>
-      <p>We use traditional mole catching methods as part of our rural and farm pest management services.</p>
-    </details>
-    <details>
-      <summary>What services do you provide for solar farms?</summary>
-      <p>We protect solar assets with rodent proofing for cable trays and inverter housings, perimeter monitoring, and 24/7 rapid response.</p>
-    </details>
-    <details>
-      <summary>Are you fully insured?</summary>
-      <p>Yes, we are fully insured and RSPH SUoR certified for all our pest control services.</p>
-    </details>
-  </section>
+    <section class="section">
+        <h2>Expert Pest Control Across South & Mid Wales</h2>
+        <p>Welcome to the master hub for all services and locations. Operated by <strong>David Hill</strong> (Ex-Pestokil) with over 30 years of experience in poison-free pest control, mole catching, and audit-ready farm protection across South & Mid Wales.</p>
+    </section>
+
+    <!-- Services -->
+    <section class="grid section">
+        <div class="card">
+            <h3>🌾 Farms & Rural</h3>
+            <p>Audit-ready pest management for farms and rural properties, including mole catching, rodent proofing, and Red Tractor compliance.</p>
+            <ul>
+                <li>Feed store rodent proofing</li>
+                <li>Traditional mole catching</li>
+                <li>Rabbit & wildlife management</li>
+                <li>Poison-free CRRU compliance</li>
+            </ul>
+            <a href="/farm-pest-management.html">View Farm Services →</a>
+        </div>
+        <div class="card">
+            <h3>☀️ Solar Asset Protection</h3>
+            <p>Protecting PV arrays and renewable energy infrastructure from rodents using permanent exclusion methods.</p>
+            <ul>
+                <li>Cable tray rodent proofing</li>
+                <li>Smart inverter housing exclusion</li>
+                <li>Perimeter monitoring</li>
+                <li>24/7 rapid response</li>
+            </ul>
+            <a href="/solar-farm-pest-control.html">View Solar Services →</a>
+        </div>
+        <div class="card">
+            <h3>🏠 Homes & Holiday Lets</h3>
+            <p>Specialist residential protection with root cause identification and prevention of pest recurrence.</p>
+            <ul>
+                <li>Rat-proofing kitchens & lofts</li>
+                <li>CCTV drain surveys</li>
+                <li>Stainless steel rat valves</li>
+                <li>Rent Smart Wales compliance</li>
+            </ul>
+            <a href="/holiday-homes-pest-control.html">View Residential Services →</a>
+        </div>
+        <div class="card">
+            <h3>🍔 Takeaways & Shops</h3>
+            <p>Commercial contracts for local businesses, discreet visits, and full reporting for EHO inspections.</p>
+            <ul>
+                <li>Fly & wasp control</li>
+                <li>Electronic fly killers (EFK)</li>
+                <li>Cockroach & store pest eradication</li>
+                <li>Cost-effective service</li>
+            </ul>
+            <a href="https://ammanford.valleypestexperts.co.uk/">View Commercial Hub →</a>
+        </div>
+        <div class="card">
+            <h3>🐝 Wasps & Hornets</h3>
+            <p>Rapid removal and nest management for homes, businesses, and holiday lets.</p>
+            <ul>
+                <li>£80 fixed price per nest</li>
+                <li>£20 for additional nests on same site</li>
+            </ul>
+            <a href="/wasp-control.html">Book Wasp Service →</a>
+        </div>
+    </section>
+
+    <!-- Google Maps Embed -->
+    <section class="map-container">
+        <h2>📍 Serving South & Mid Wales</h2>
+        <div class="google-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455344.61371057044!2d-4.250082706936623!3d51.828720867268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1770342264570!5m2!1sen!2suk" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Welsh Town and Country Pest Services Location Map">
+            </iframe>
+        </div>
+        <p style="margin-top: 1rem;"><strong>Coverage Area:</strong> Neath, Merthyr Tydfil, Brecon, Ammanford, Swansea, Cardiff, and all surrounding areas</p>
+    </section>
+
+    <!-- Regional Hubs -->
+    <section class="section links-section">
+        <h2>📍 Regional & Town Hubs</h2>
+        <ul>
+            <li><strong>Regional Hub Sites:</strong></li>
+            <li><a href="https://ammanford.valleypestexperts.co.uk/">Ammanford Experts</a></li>
+            <li><a href="https://neathporttalbot.valleypestexperts.co.uk/">Neath Port Talbot Hub</a></li>
+            <li><a href="https://merthyrtydfil.valleypestexperts.co.uk/">Merthyr Tydfil Hub</a></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Beacons Hub</a></li>
+            <li><a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a></li>
+            <li><strong>Neath & Valleys:</strong></li>
+            <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control.html">Resolven (SA11)</a></li>
+            <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control.html">Glynneath (SA11)</a></li>
+            <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control.html">Skewen (SA10)</a></li>
+            <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/briton-ferry-rat-control.html">Briton Ferry</a></li>
+            <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control.html">Tonna (SA11)</a></li>
+            <li><strong>Merthyr & Heads:</strong></li>
+            <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/aberfan-troedyrhiw-cf48.html">Aberfan (CF48)</a></li>
+            <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/nelson-cf46.html">Nelson (CF46)</a></li>
+            <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/rhymney-np22.html">Rhymney (NP22)</a></li>
+            <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/dowlais-gurnos-cf48.html">Dowlais (CF48)</a></li>
+            <li><strong>Tywi & Beacons:</strong></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html">Llandeilo (SA19)</a></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html">Sennybridge (LD3)</a></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html">Crickhowell (NP8)</a></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html">Llangadog (SA19)</a></li>
+        </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">1. What areas in Wales do you cover for pest control?</div>
+                <div class="faq-answer">We provide comprehensive pest control services across South and Mid Wales, including Neath, Merthyr Tydfil, Brecon, Ammanford, Swansea, Cardiff, and surrounding valleys. Our coverage extends to towns like Resolven, Glynneath, Skewen, Aberfan, Rhymney, Llandeilo, and Crickhowell.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">2. Are your rodent control methods poison-free?</div>
+                <div class="faq-answer">Yes, we specialize in poison-free rodent control and are fully CRRU (Campaign for Responsible Rodenticide Use) compliant. We use humane traps, exclusion methods, and monitoring systems that eliminate risks to pets, wildlife, and the environment.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">3. How much does wasp nest removal cost?</div>
+                <div class="faq-answer">Our wasp nest removal service is priced at a fixed £80 per nest, with additional nests on the same property costing only £20 each. This includes complete removal and treatment to prevent recurrence.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">4. Do you offer farm pest control for Red Tractor audits?</div>
+                <div class="faq-answer">Absolutely. We provide audit-ready pest management specifically designed for Red Tractor 2026 compliance. Our services include rodent proofing, mole catching, documentation, and preventive measures that meet all certification requirements.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">5. What's your experience with mole catching?</div>
+                <div class="faq-answer">With over 30 years of experience, we specialize in traditional mole catching using proven methods. David Hill's expertise ensures effective mole removal while maintaining environmental balance on your property.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">6. Are you available for emergency pest control?</div>
+                <div class="faq-answer">Yes, we offer 24/7 emergency pest control services. Call us anytime at 07375 303124 for immediate assistance with urgent pest infestations.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">7. What services do you provide for solar farms?</div>
+                <div class="faq-answer">We protect solar assets with specialized rodent proofing for cable trays and inverter housings, perimeter monitoring systems, bird deterrent solutions, and 24/7 rapid response to prevent damage to your renewable energy infrastructure.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">8. Are you qualified and insured?</div>
+                <div class="faq-answer">Yes, we are fully insured, RSPH (Royal Society for Public Health) SUoR certified, and hold all necessary qualifications. David Hill has 30+ years experience including previous work with Pestokil.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">9. Do you offer commercial pest control contracts?</div>
+                <div class="faq-answer">Yes, we provide cost-effective commercial contracts for takeaways, shops, restaurants, and businesses. Our service includes discreet visits, detailed reporting for EHO inspections, and preventive maintenance.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">10. How quickly can you respond to a pest problem?</div>
+                <div class="faq-answer">We typically respond within 24 hours for standard appointments and offer same-day emergency service for urgent cases. Our rapid response team covers South and Mid Wales efficiently.</div>
+            </div>
+        </div>
+    </section>
 </main>
+
 <footer>
-  <strong>Welsh Town and Country Pest Services</strong>
-  <p>© 2026 | RSPH SUoR Certified | Fully Insured | Operated by David Hill (Ex-Pestokil)</p>
-  <a href="tel:07375303124">07375 303124</a>
-  <p><a href="https://www.google.com/maps?cid=14588226068222627931" target="_blank">View our Google Business Profile</a></p>
-  <iframe width="600" height="450" style="border:0; max-width:100%;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.719!2d-3.698319!3d51.715092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca73ca513b80d05b!2sWelsh%20Town%20and%20Country%20Pest%20Services!5e0!3m2!1sen!2sgb!4v1707234567890"></iframe>
-  <p style="font-size:0.8rem; opacity:0.6;">Specialist in poison-free rodent eradication, traditional mole trapping, and audit-ready farm protection.</p>
+    <strong>Welsh Town and Country Pest Services</strong>
+    <p>© 2026 | RSPH SUoR Certified | Fully Insured | Operated by David Hill (Ex-Pestokil)</p>
+    <p><a href="tel:07375303124">24/7 Emergency: 07375 303124</a></p>
+    <p><a href="https://www.google.com/maps?cid=14588226068222627931" target="_blank">View our Google Business Profile & Reviews</a></p>
+    <p style="font-size:0.8rem; opacity:0.6; margin-top: 2rem;">Specialist in poison-free rodent eradication, traditional mole trapping, and audit-ready farm protection across Wales.</p>
 </footer>
 </body>
 </html>
