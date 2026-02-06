@@ -1,185 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valley Pest Experts | Poison-Free Farm, Solar & Holiday Home Pest Control South & Mid Wales</title>
-  <meta name="description" content="Valley Pest Experts – humane, poison-free pest control for farms, solar sites & rural holiday homes across South & Mid Wales including Tywi Valley & Brecon Beacons. RSPH Level 2 certified.">
-  <meta name="keywords" content="farm pest control Wales, solar farm pest control, holiday home pest control Wales, poison-free rodent control, mole control, Red Tractor audit 2026, SALSA compliance Wales">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="David Hill, Valley Pest Experts">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Valley Pest Experts | Humane Farm, Solar & Holiday Home Pest Control Wales">
-  <meta property="og:description" content="Expert, poison-free pest control for farms, solar arrays & rural holiday homes in South & Mid Wales.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.valleypestexperts.co.uk/">
-  <meta property="og:image" content="https://www.valleypestexperts.co.uk/images/logo.png">
-
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="https://www.valleypestexperts.co.uk/">
-  
-  <link rel="stylesheet" href="styles/desktop.css">
-  <link rel="stylesheet" href="styles/mobile.css">
+  <title>Welsh Town and Country Pest Services | 24/7 Expert Pest Control South & Mid Wales</title>
+  <meta name="description" content="Welsh Town and Country Pest Services: David Hill (Ex-Pestokil) provides 24/7 poison-free pest control for farms, solar sites, holiday homes, and businesses. 30+ years experience.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Valley Pest Experts",
-    "description": "Humane, poison-free pest control specialist for farms, solar farms and rural holiday homes in South & Mid Wales.",
-    "telephone": "07375 303124",
-    "url": "https://www.valleypestexperts.co.uk/",
-    "image": "https://www.valleypestexperts.co.uk/images/logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Resolven",
-      "addressRegion": "South & Mid Wales",
-      "addressCountry": "GB"
-    },
-    "sameAs": ["https://www.google.com/business/"]
-  }
-  </script>
+  <style>
+    :root {
+      --primary: #0b6623;
+      --dark: #083d14;
+      --blue: #0066cc;
+      --red: #d32f2f;
+      --gold: #ffcc00;
+      --text: #333;
+      --bg: #fdfdfd;
+      --shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
 
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/147644502.js"></script>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.8; color: var(--text); background: var(--bg); }
+    h1, h2, h3 { font-family: 'Inter', sans-serif; font-weight: 800; color: var(--dark); }
+    
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    .site-header { background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 100%); color: #fff; padding: 1rem 0; border-bottom: 5px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; }
+    .logo-group { display: flex; align-items: center; gap: 20px; }
+    .main-logo { height: 80px; }
+    .primary-cta { background: var(--red); color: #fff; text-decoration: none; padding: 12px 25px; border-radius: 50px; font-weight: 800; border: 2px solid #fff; }
+
+    /* Hero */
+    .hero { padding: 80px 0; background: #fff; text-align: center; border-bottom: 1px solid #eee; }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 15px; letter-spacing: -1px; }
+    .hero h2 { font-size: 1.5rem; color: var(--blue); margin-bottom: 30px; }
+    .hero p { max-width: 800px; margin: 0 auto; font-size: 1.2rem; color: #555; }
+
+    /* SEO Long Form Content Sections */
+    .content-section { padding: 60px 0; }
+    .content-section h2 { font-size: 2.2rem; margin-bottom: 25px; border-left: 8px solid var(--primary); padding-left: 20px; }
+    .content-section h3 { font-size: 1.6rem; margin: 30px 0 15px; color: var(--blue); }
+    .content-section p { margin-bottom: 20px; font-size: 1.1rem; }
+    
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
+    .feature-card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: var(--shadow); border-top: 5px solid var(--primary); }
+
+    /* IPM Image Placeholder */
+    .ipm-graphic { background: #f0f4f0; border: 3px dashed var(--primary); padding: 40px; text-align: center; margin: 40px 0; border-radius: 20px; }
+
+    /* Links Grid */
+    .link-hub { background: var(--dark); color: #fff; padding: 60px 0; border-radius: 40px 40px 0 0; }
+    .link-hub h2 { color: var(--gold); border: none; text-align: center; margin-bottom: 40px; }
+    .link-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .link-grid a { color: #ccc; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+    .link-grid a:hover { color: var(--gold); }
+
+    .footer { background: #000; color: #fff; padding: 40px 0; text-align: center; }
+    .footer-highlight { color: var(--gold); font-weight: 800; font-size: 1.5rem; display: block; margin-bottom: 10px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .site-header .primary-cta { display: none; }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
+  <div class="container header-inner">
     <div class="logo-group">
-      <img src="/images/logo.png" alt="Valley Pest Experts" class="main-logo">
-      <img src="/images/rsph-cert-badge.png" alt="RSPH Level 2 Certified" class="cert-badge">
+      <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" class="main-logo">
+      <img src="/images/rsph-badge.png" alt="RSPH Certified" style="height:60px; background:#fff; border-radius:5px;">
     </div>
-    
-    <div class="header-text">
-      <h1>Valley Pest Experts</h1>
-      <p class="tagline">Humane, Poison-Free Pest Control for Rural Wales</p>
-    </div>
-
-    <nav class="site-nav">
-      <ul class="main-nav">
-        <li><a href="/farm-pest-management.html">Farms</a></li>
-        <li><a href="/solar-farm-pest-control.html">Solar Sites</a></li>
-        <li><a href="/holiday-homes-pest-control.html">Holiday Homes</a></li>
-        <li><a href="/audit-compliance.html">Audit Compliance</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-cta">
-      <a href="tel:07375303124" class="primary-cta">📞 07375 303124</a>
-      <a href="https://www.google.com/business/" target="_blank" class="secondary-cta">Google Profile</a>
-    </div>
+    <a href="tel:07375303124" class="primary-cta">CALL DAVID: 07375 303124</a>
   </div>
 </header>
 
-<main>
-  <section class="hero-banner">
-    <div class="hero-content">
-      <h2>Expert Pest Management for the Welsh Rural Economy</h2>
-      <p>Providing sustainable, poison-free solutions across the <strong>Brecon Beacons</strong> and <strong>Tywi Valley</strong>. Led by David Hill, we specialise in modern environmental standards for farms, solar arrays, and holiday homes.</p>
+<section class="hero">
+  <div class="container">
+    <h1>Welsh Town and Country Pest Services</h1>
+    <h2>South & Mid Wales’ Leading 24/7 Pest Management Authority</h2>
+    <p>With 30+ years of frontline experience, David Hill (Former Pestokil Technician) delivers high-end, poison-free pest control. We specialize in protecting the Welsh rural economy—from Red Tractor certified farms to complex solar arrays and luxury holiday lets.</p>
+  </div>
+</section>
+
+<main class="container">
+  
+  <article class="content-section">
+    <h2>The 2026 Standard: Integrated Pest Management (IPM)</h2>
+    <p>At <strong>Welsh Town and Country Pest Services</strong>, we have moved beyond the outdated "box-and-bait" model. In 2026, the Environmental Agency and CRRU (Campaign for Responsible Rodenticide Use) have tightened regulations surrounding the use of chemical poisons in the Welsh countryside. Our approach is built on the <strong>IPM Pyramid</strong>, ensuring that lethal chemical intervention is the last resort, not the first.</p>
+    
+    <div class="ipm-graphic">
+      <h3>The IPM Hierarchy for Welsh Agriculture</h3>
+      <p><strong>Tier 1: Physical Proofing</strong> - Blocking entry points with steel mesh and rapid-set compounds.</p>
+      <p><strong>Tier 2: Sanitation</strong> - Removing the food sources that attract rats and mice to your feed stores.</p>
+      <p><strong>Tier 3: Non-Toxic Monitoring</strong> - Using UV-reactive tracking and digital sensors.</p>
+      <p><strong>Tier 4: Mechanical Control</strong> - Precision trapping (poison-free) to clear active infestations.</p>
     </div>
-  </section>
 
-  <section class="services-gallery">
-    <h2 class="section-title">Our Core Specialisms</h2>
-    <div class="projects-grid">
-      <figure>
-        <div class="img-container">
-          <img src="/images/mole-farm.jpg" alt="Poison-free mole control on Welsh farmland">
-        </div>
-        <figcaption>
-          <h3>Farmland Mole Management</h3>
-          <p>Protecting pasture quality in the Tywi Valley using traditional trapping. <a href="https://tywi-valley.welshtownandcountry.co.uk/">Learn more in Tywi Valley</a>.</p>
-        </figcaption>
-      </figure>
+    <h3>Why Poison-Free is the Future of Wales</h3>
+    <p>The reliance on second-generation anticoagulant rodenticides (SGARs) has led to widespread secondary poisoning of Welsh birds of prey, specifically the Red Kite and Barn Owl populations in the Tywi Valley and Brecon Beacons. By choosing Welsh Town and Country Pest Services, you are opting for a "Proofing First" methodology. We identify how the pests are entering—be it via defective drainage or structural gaps—and we fix the building, not just the pest.</p>
+  </article>
 
-      <figure>
-        <div class="img-container">
-          <img src="/images/rat-house.jpg" alt="Rodent control for rural holiday lets">
-        </div>
-        <figcaption>
-          <h3>Holiday Home Security</h3>
-          <p>Comprehensive proofing for Brecon Beacons lets—guest-safe and wildlife-friendly. <a href="https://brecon.welshtownandcountry.co.uk/">Brecon subdomain details</a>.</p>
-        </figcaption>
-      </figure>
+  <hr>
 
-      <figure>
-        <div class="img-container">
-          <img src="/images/rat-unit.jpg" alt="Rodent monitoring for agricultural units">
-        </div>
-        <figcaption>
-          <h3>Audit-Ready Protection</h3>
-          <p>High-tech monitoring designed for Red Tractor and SALSA compliance.</p>
-        </figcaption>
-      </figure>
+  <article class="content-section">
+    <h2>Specialized Agricultural Audit Compliance</h2>
+    <p>For the modern Welsh farmer, a pest infestation isn't just a nuisance—it's a threat to your livelihood and your certifications. We provide the comprehensive paperwork and digital reporting required for:</p>
+    <ul style="margin-left: 40px; margin-bottom: 20px;">
+      <li><strong>Red Tractor Assurance:</strong> Detailed site maps and visit logs.</li>
+      <li><strong>SALSA (Safe and Local Supplier Approval):</strong> Rigorous monitoring for food production.</li>
+      <li><strong>GlobalGAP:</strong> Meeting international standards for agricultural exports.</li>
+    </ul>
+    <p>David Hill's 30 years of field experience means he understands the specific pressures of harvest season and the vulnerability of feed silos. We offer monthly or quarterly contracts that are 20-30% more cost-effective than national providers, with the added benefit of local, 24/7 responsiveness.</p>
+  </article>
+
+  <div class="grid-3">
+    <div class="feature-card">
+      <h3>🚜 Farm Pest Control</h3>
+      <p>Comprehensive rodent and mole management for livestock farms. We focus on feed-store security and pasture integrity. <strong>Poison-free trapping is our specialty.</strong></p>
     </div>
-  </section>
-
-  <section class="detailed-content">
-    <div class="content-wrapper">
-      <div class="text-block">
-        <h3>The 2026 IPM Standard</h3>
-        <p>At Valley Pest Experts, we implement <strong>Integrated Pest Management (IPM)</strong>. By focusing on "Proofing and Exclusion," we physically block pests from entering your feed stores or solar arrays.</p>
-        
-        <div class="image-placeholder">
-          <p>[Image of integrated pest management pyramid]</p>
-        </div>
-
-        <p>This proactive, non-toxic approach is preferred by modern auditors. Our digital reporting ensures you have a full paper trail for every inspection. We protect the land for future generations by avoiding blanket baiting that harms the Red Kite and Barn Owl.</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>Why Choose Us?</h3>
-        <ul class="check-list">
-          <li><strong>RSPH Level 2 Certification:</strong> Legal compliance guaranteed.</li>
-          <li><strong>Solar Farm Specialists:</strong> Safeguarding PV arrays from cable damage.</li>
-          <li><strong>Discrete Protection:</strong> Specialized exclusion for luxury holiday cottages.</li>
-          <li><strong>Local Expertise:</strong> Based in Resolven, serving Ammanford, Neath, Merthyr, Brecon, and surrounding valleys.</li>
-        </ul>
-      </div>
+    <div class="feature-card">
+      <h3>☀️ Solar Farm Protection</h3>
+      <p>Rodents can cause thousands of pounds in damage to solar array cabling. We provide mechanical exclusion and non-toxic monitoring to safeguard your renewable energy assets.</p>
     </div>
-  </section>
-
-  <section class="map-section">
-    <h2 class="section-title">Serving South & Mid Wales</h2>
-    <p class="section-subtitle">Local experts for poison-free pest control across the valleys.</p>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158434.61908078712!2d-4.0450534!3d51.7118433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e6097d3910555%3A0x6a0a0994d2570b6!2sResolven!5e0!3m2!1sen!2suk!4v1705300000000!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="feature-card">
+      <h3>🏡 Holiday Let Security</h3>
+      <p>Luxury cottages in the Brecon Beacons require discrete service. We specialize in rat-proofing kitchens and lofts, ensuring your guests never see a pest.</p>
     </div>
-  </section>
+  </div>
+
+  <article class="content-section">
+    <h2>The "River Rat" Challenge in the Welsh Valleys</h2>
+    <p>Towns like Neath, Merthyr, and Ammanford often face unique challenges with <em>Rattus norvegicus</em> (the Brown Rat) due to the proximity of river systems and aging Victorian drainage networks. These "River Rats" are highly mobile and often enter terraced houses via shared drainage stacks.</p>
+    <h3>CCTV Drain Surveys & Rat Valves</h3>
+    <p>If you have a recurring rat problem in your kitchen or bathroom, the issue is almost certainly a break in the sewer pipe. As part of Welsh Town and Country Pest Services, we utilize <strong>CCTV drain inspection cameras</strong> to locate these defects. Once found, we install <strong>stainless steel rat-blocker valves</strong>. These valves allow waste to flow out but prevent rats from swimming up into your property. This is a permanent, one-time fix that eliminates the need for endless baiting.</p>
+  </article>
+
+  <article class="content-section">
+    <h2>Traditional Mole Catching: "No Catch, No Fee"</h2>
+    <p>As the premier <strong>Welsh Mole Catcher</strong>, David Hill maintains the traditional art of mole trapping. On farmland, moles can contaminate silage with soil, leading to Listeriosis in livestock. On golf courses and manicured lawns, the damage is aesthetic but costly. We do not use gas or poisons. We use precision-set traps that are safe for pets, horses, and cattle. Our "No Catch, No Fee" policy remains the gold standard of trust for our clients.</p>
+  </article>
+
+  <article class="content-section">
+    <h2>Insect Control: Wasps, Hornets, and Bed Bugs</h2>
+    <p>In addition to rodent and wildlife management, we provide rapid-response insect treatments across South Wales. Our wasp nest removal service is fixed at <strong>£80</strong>, with a reduced rate of <strong>£20</strong> for any additional nests on the same site. We use high-reach lances to treat nests safely without the need for expensive scaffolding.</p>
+    <p>For the hospitality sector in Mid Wales, we offer specialized heat treatments and residual sprays for bed bug and flea infestations, providing landlord certificates and Rent Smart Wales compliance documentation.</p>
+  </article>
+
 </main>
 
-<footer class="site-footer">
-  <div class="footer-content">
-    <p class="footer-brand"><strong>Valley Pest Experts</strong> | Welsh Town & Country Pest Management</p>
-
-    <div class="related-sites">
-      <h4>Local Service Hubs & Subdomains</h4>
-      <ul class="hub-links">
-        <!-- Valleypest subdomains -->
-        <li><a href="https://ammanford.valleypestexperts.co.uk/" target="_blank">Ammanford – Valley Pest Experts</a></li>
-        <li><a href="https://neathporttalbot.valleypestexperts.co.uk/" target="_blank">Neath Port Talbot – Valley Pest Experts</a></li>
-        <li><a href="https://merthyrtydfil.valleypestexperts.co.uk/" target="_blank">Merthyr Tydfil – Valley Pest Experts</a></li>
-        <!-- WTC house/shop subdomains -->
-        <li><a href="https://brecon.welshtownandcountry.co.uk/" target="_blank">Brecon – Welsh Town & Country</a></li>
-        <li><a href="https://merthyr.welshtownandcountry.co.uk/" target="_blank">Merthyr – Welsh Town & Country</a></li>
-        <li><a href="https://neath.welshtownandcountry.co.uk/" target="_blank">Neath – Welsh Town & Country</a></li>
-        <!-- Other site -->
-        <li><a href="https://www.welshmolecatcher.co.uk/" target="_blank">Welsh Mole Catcher</a></li>
-      </ul>
+<section class="link-hub">
+  <div class="container">
+    <h2>Regional Service Network & Local Hubs</h2>
+    <div class="link-grid">
+      <div class="link-group">
+        <strong style="color:var(--gold)">Main Hubs</strong><br>
+        <a href="https://ammanford.valleypestexperts.co.uk/">Ammanford</a><br>
+        <a href="https://neathporttalbot.valleypestexperts.co.uk/">Neath Port Talbot</a><br>
+        <a href="https://merthyrtydfil.valleypestexperts.co.uk/">Merthyr Tydfil</a><br>
+        <a href="https://brecon.welshtownandcountry.co.uk/">Brecon Hub</a>
+      </div>
+      <div class="link-group">
+        <strong style="color:var(--gold)">Neath Valley</strong><br>
+        <a href="https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control.html">Resolven</a><br>
+        <a href="https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control.html">Glynneath</a><br>
+        <a href="https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control.html">Tonna</a><br>
+        <a href="https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control.html">Skewen</a>
+      </div>
+      <div class="link-group">
+        <strong style="color:var(--gold)">Merthyr & Heads</strong><br>
+        <a href="https://merthyr.welshtownandcountry.co.uk/hypapages/aberfan-troedyrhiw-cf48.html">Aberfan</a><br>
+        <a href="https://merthyr.welshtownandcountry.co.uk/hypapages/nelson-cf46.html">Nelson</a><br>
+        <a href="https://merthyr.welshtownandcountry.co.uk/hypapages/rhymney-np22.html">Rhymney</a><br>
+        <a href="https://merthyr.welshtownandcountry.co.uk/hypapages/bargoed-cf81.html">Bargoed</a>
+      </div>
+      <div class="link-group">
+        <strong style="color:var(--gold)">Tywi & Beacons</strong><br>
+        <a href="https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html">Llandeilo</a><br>
+        <a href="https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html">Sennybridge</a><br>
+        <a href="https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html">Llangadog</a><br>
+        <a href="https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html">Crickhowell</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="footer-bottom">
-      <p>© 2026 Valley Pest Experts. All Rights Reserved.</p>
-      <p class="footer-tel">📞 <a href="tel:07375303124">07375 303124</a></p>
-      <p><a href="https://www.google.com/business/" target="_blank" style="color: var(--accent-gold);">Visit our Google Business Profile</a></p>
-    </div>
+<footer class="footer">
+  <div class="container">
+    <span class="footer-highlight">Welsh Town and Country Pest Services</span>
+    <p>Owned and Operated by David Hill | 30+ Years Experience</p>
+    <p>© 2026 Welsh Town & Country | RSPH SUoR Certified | Fully Insured</p>
+    <p style="margin-top: 20px;">
+      <a href="tel:07375303124" style="color:#fff; text-decoration:none; font-weight:800; font-size:1.4rem;">📞 07375 303124</a>
+    </p>
   </div>
 </footer>
 
