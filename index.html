@@ -28,148 +28,140 @@
 * { box-sizing: border-box; margin:0; padding:0; }
 html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
 body { line-height:1.6; color:#222; background:#f4f7f4; }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
-header { 
-    background:linear-gradient(135deg,var(--dark)0%,var(--blue)100%); 
-    color:#fff; 
-    padding:3rem 1rem; 
-    text-align:center; 
+header {
+    background:linear-gradient(135deg,var(--dark)0%,var(--blue)100%);
+    color:#fff;
+    padding:3rem 1rem;
+    text-align:center;
     border-bottom:5px solid var(--gold);
 }
-.header-phone { 
-    font-size:2.2rem; 
-    font-weight:900; 
-    color:var(--gold); 
-    text-decoration:none; 
-    display:inline-block; 
-    margin-top:10px; 
-    padding:10px 25px; 
-    background: rgba(0,0,0,0.2); 
-    border-radius:50px; 
+.header-phone {
+    font-size:2.2rem;
+    font-weight:900;
+    color:var(--gold);
+    text-decoration:none;
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 25px;
+    background: rgba(0,0,0,0.2);
+    border-radius:50px;
     border:2px solid var(--gold);
 }
-
-.section { 
-    max-width:1200px; 
-    margin:2rem auto; 
-    padding:0 1.5rem; 
+.section {
+    max-width:1200px;
+    margin:2rem auto;
+    padding:0 1.5rem;
 }
-.grid { 
-    display:grid; 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); 
-    gap:25px; 
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
 }
-.card { 
-    background:white; 
-    border-radius:15px; 
-    overflow:hidden; 
-    box-shadow:var(--shadow); 
-    border-bottom:5px solid var(--green); 
+.card {
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border-bottom:5px solid var(--green);
     transition:0.3s;
 }
 .card:hover { transform:translateY(-5px);}
-.card h3 { 
-    color:var(--green); 
+.card h3 {
+    color:var(--green);
     padding:1.2rem 1rem 0.5rem;
 }
-.card p, .card ul, .card a { 
-    padding:0 1.2rem 1.5rem; 
+.card p, .card ul, .card a {
+    padding:0 1.2rem 1.5rem;
     font-size:1rem;
 }
-.card ul { 
-    list-style:disc; 
+.card ul {
+    list-style:disc;
     margin-left:20px;
 }
-.card a { 
-    display:inline-block; 
-    color:var(--blue); 
-    text-decoration:none; 
-    font-weight:600; 
-    margin-top:5px; 
+.card a {
+    display:inline-block;
+    color:var(--blue);
+    text-decoration:none;
+    font-weight:600;
+    margin-top:5px;
 }
 .card a:hover { text-decoration:underline; }
-
-.links-section { 
-    background:white; 
-    padding:2rem; 
-    border-radius:20px; 
+.links-section {
+    background:white;
+    padding:2rem;
+    border-radius:20px;
     box-shadow:var(--shadow);
 }
-.links-section ul { 
-    columns:3; 
-    list-style:none; 
+.links-section ul {
+    columns:3;
+    list-style:none;
     padding:0;
 }
-.links-section li { 
-    margin-bottom:10px; 
+.links-section li {
+    margin-bottom:10px;
 }
-.links-section a { 
-    color:var(--blue); 
-    text-decoration:none; 
+.links-section a {
+    color:var(--blue);
+    text-decoration:none;
 }
 .links-section a:hover { text-decoration:underline;}
-
-footer { 
-    background:#111; 
-    color:white; 
-    padding:4rem 1.5rem; 
-    text-align:center; 
+footer {
+    background:#111;
+    color:white;
+    padding:4rem 1.5rem;
+    text-align:center;
     border-top:8px solid var(--gold);
 }
-footer a { 
-    color:var(--gold); 
-    text-decoration:none; 
+footer a {
+    color:var(--gold);
+    text-decoration:none;
     font-weight:bold;
 }
-
 /* FAQ Styles */
-.faq-container { 
-    background:white; 
-    border-radius:20px; 
-    box-shadow:var(--shadow); 
-    padding:2rem; 
-    margin-top:2rem; 
+.faq-container {
+    background:white;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:2rem;
+    margin-top:2rem;
 }
-.faq-item { 
-    margin-bottom:1rem; 
-    border-bottom:1px solid #eee; 
-    padding-bottom:1rem; 
+.faq-item {
+    margin-bottom:1rem;
+    border-bottom:1px solid #eee;
+    padding-bottom:1rem;
 }
-.faq-question { 
-    font-weight:800; 
-    color:var(--green); 
-    margin-bottom:0.5rem; 
-    font-size:1.1rem; 
+.faq-question {
+    font-weight:800;
+    color:var(--green);
+    margin-bottom:0.5rem;
+    font-size:1.1rem;
 }
-.faq-answer { 
-    color:#444; 
+.faq-answer {
+    color:#444;
 }
-
 /* Map Container */
-.map-container { 
-    margin:3rem auto; 
-    text-align:center; 
-    max-width:1200px; 
-    padding:0 1.5rem; 
+.map-container {
+    margin:3rem auto;
+    text-align:center;
+    max-width:1200px;
+    padding:0 1.5rem;
 }
-.map-container h2 { 
-    color:var(--dark); 
-    margin-bottom:1.5rem; 
-    font-size:2rem; 
+.map-container h2 {
+    color:var(--dark);
+    margin-bottom:1.5rem;
+    font-size:2rem;
 }
-.google-map { 
-    border-radius:15px; 
-    overflow:hidden; 
-    box-shadow:var(--shadow); 
-    border:5px solid white; 
+.google-map {
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:5px solid white;
 }
-
 @media(max-width:768px){
     .header-phone{font-size:1.6rem;}
     .card a{font-size:1.2rem;}
@@ -228,7 +220,6 @@ footer a {
         <p><a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a></p>
     </div>
 </header>
-
 <main>
     <section class="section">
         <div class="container">
@@ -236,29 +227,22 @@ footer a {
             <p>Welcome to the master hub for all services and locations. Operated by <strong>David Hill</strong> (Ex-Pestokil) with over 30 years of experience in poison-free pest control, mole catching, and audit-ready farm protection across South & Mid Wales.</p>
         </div>
     </section>
-
     <!-- Pet-Friendly Intro (Updated for Flea Treatments & Pet Care) -->
 <section class="section">
     <div class="container">
         <h2>Pet-Friendly & Poison-Free Pest Control</h2>
-        
+       
         <p>
             At Welsh Town and Country Pest Services, we understand that dogs and cats are part of the family. That’s why we offer pet-friendly and poison-free pest control options wherever possible, including safe flea treatments for homes. This ensures your pets, wildlife, and livestock stay safe during any treatment.
         </p>
-
         <p>
-            If pets are present during treatment, we can arrange for them to be safely taken care of by 
-            <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener">
-                Julie’s Pet Services
-            </a>. Julie can walk or bathe your pets and return them once the home is safe, giving you peace of mind while we protect your property from fleas and other pests.
+            We team up with Julie’s Pet Scanning and Microchipping to give South Wales homeowners and pet owners complete peace of mind. For specialist pet ultrasound scanning, microchipping, dog walking and sitting in Neath and Swansea, visit their site here: <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener noreferrer">pet scanning and microchipping in South Wales</a>. If pets are present during treatment, Julie can walk or bathe your pets and return them once the home is safe, giving you peace of mind while we protect your property from fleas and other pests.
         </p>
-
         <p>
             Many customers in Neath, Port Talbot, Swansea, and Aberdare appreciate this convenient, safe approach. Protecting your pets is just as important as protecting your property.
         </p>
     </div>
 </section>
-
     <!-- Services Grid -->
     <section class="section">
         <div class="container">
@@ -319,7 +303,6 @@ footer a {
             </div>
         </div>
     </section>
-
     <!-- Google Maps Embed -->
     <section class="map-container">
         <div class="container">
@@ -339,7 +322,6 @@ footer a {
             <p style="margin-top: 1rem;"><strong>Coverage Area:</strong> Neath, Merthyr Tydfil, Brecon, Ammanford, Swansea, Cardiff, and all surrounding areas</p>
         </div>
     </section>
-
     <!-- Regional Hubs -->
     <section class="section links-section">
         <div class="container">
@@ -370,7 +352,6 @@ footer a {
             </ul>
         </div>
     </section>
-
     <!-- FAQ Section -->
     <section class="section" id="faq">
         <div class="container">
@@ -420,7 +401,6 @@ footer a {
         </div>
     </section>
 </main>
-
 <footer>
     <div class="container">
         <strong>Welsh Town and Country Pest Services</strong>
