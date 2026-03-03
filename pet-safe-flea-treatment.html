@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mole Trapping & Rural Pest Control | Neath, Brecon & Sennybridge</title>
-    <meta name="description" content="Professional mole trapping, rat control & wasp nest removal in Neath, Brecon & Senny Bridge. 30+ years field experience. Farm audit compliant. Call David Hill direct.">
+    <title>Mole Trapping & Rat Control Neath, Brecon & Senny Bridge | David Hill</title>
+    <meta name="description" content="Professional mole trapping, rat control and wasp nest removal. 30+ years field experience. Covering Neath, Brecon, Senny Bridge and the A40 corridor. Ring David direct.">
     
-    <meta property="og:title" content="Welsh Town & Country Pest Services | David Hill">
-    <meta property="og:description" content="Traditional Mole Trapping & Rodent Control. 30+ Years Experience. Covering the A40 Corridor.">
-    <meta property="og:type" content="website">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -18,38 +14,36 @@
         :root {
             --green: #0b6623;
             --dark: #083d14;
-            --blue: #004a99;
+            --blue: #0066cc;
             --gold: #ffcc00;
-            --light-bg: #f8faf8;
-            --shadow: 0 12px 40px rgba(0,0,0,0.1);
+            --light-bg: #f4f7f4;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
         
         * { box-sizing: border-box; margin:0; padding:0; }
         html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
-        body { line-height:1.7; color:#2d2d2d; background:var(--light-bg); padding-top: 65px; } 
+        body { line-height:1.6; color:#222; background:var(--light-bg); padding-top: 60px; } 
         
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
 
-        /* URGENT STICKY BAR */
         .sticky-cta {
             position: fixed;
             top: 0; left: 0; right: 0;
             background: var(--gold);
             color: var(--dark);
             text-align: center;
-            padding: 12px;
+            padding: 10px;
             font-weight: 800;
-            z-index: 2000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-bottom: 2px solid rgba(0,0,0,0.05);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
-        .sticky-cta a { color: var(--dark); text-decoration: none; font-size: 1.15rem; display: block; }
+        .sticky-cta a { color: var(--dark); text-decoration: none; font-size: 1.1rem; }
 
         header {
-            background: linear-gradient(135deg, var(--dark) 0%, #111 100%);
+            background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 100%);
             color: #fff;
-            padding: 2rem 0;
-            border-bottom: 5px solid var(--gold);
+            padding: 1.5rem 0;
+            border-bottom: 4px solid var(--gold);
         }
 
         .header-flex {
@@ -57,225 +51,186 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px;
         }
 
-        .brand-name { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; }
+        .header-logo { max-width: 180px; height: auto; }
+        .header-content { text-align: right; }
+
         .header-phone-btn {
             background: var(--gold);
             color: var(--dark) !important;
-            padding: 12px 25px;
-            border-radius: 8px;
+            padding: 8px 20px;
+            border-radius: 5px;
             font-weight: 800;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
             font-size: 1.2rem;
-            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.3s;
         }
-        .header-phone-btn:hover { background: #fff; transform: scale(1.05); }
+        .header-phone-btn:hover { background: #fff; transform: translateY(-2px); }
 
-        .hero-section {
-            background: white;
-            padding: 3rem 2rem;
-            margin-top: 2rem;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
+        .trust-line {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            opacity: 0.9;
+            margin-top: 5px;
         }
 
-        h1 { font-size: 2.5rem; color: var(--green); margin-bottom: 1rem; line-height: 1.1; letter-spacing: -1px; }
-        h2 { font-size: 1.8rem; margin: 2.5rem 0 1.2rem; color: var(--dark); border-left: 6px solid var(--green); padding-left: 20px; }
-        h3 { color: var(--green); font-size: 1.4rem; margin-bottom: 8px; font-weight: 800; }
+        section { 
+            padding: 3rem 2rem; 
+            background: white; 
+            margin: 2rem auto; 
+            border-radius: 12px; 
+            box-shadow: var(--shadow); 
+            max-width: 900px;
+        }
+
+        h1 { font-size: 2.2rem; color: var(--green); margin-bottom: 1rem; line-height: 1.2; }
+        h2 { font-size: 1.8rem; margin: 2.5rem 0 1rem; color: var(--dark); border-left: 4px solid var(--green); padding-left: 15px; }
+        h3 { margin-bottom: 10px; color: var(--green); font-size: 1.3rem; }
 
         .main-service-img {
             width: 100%;
-            height: auto;
             border-radius: 12px;
-            margin: 1.5rem 0;
-            object-fit: cover;
-            border: 1px solid #ddd;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
         }
 
-        .feature-grid {
+        .method-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 2.5rem 0;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
         }
 
-        .feature-card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid #eee;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border-top: 5px solid var(--green);
+        .method-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-bottom: 3px solid var(--green);
         }
 
-        /* AUDIT COMPLIANCE BOX */
-        .audit-box {
-            background: #eef5ef;
-            border: 2px solid var(--green);
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 3rem 0;
-        }
+        .seo-content { font-size: 0.95rem; color: #444; line-height: 1.8; }
+        .seo-content p { margin-bottom: 1.5rem; }
 
-        .audit-box h3 { color: var(--dark); }
-
-        .area-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin: 2rem 0;
+        .btn-large {
+            display: block;
+            background: var(--green);
+            color: white !important;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            margin-top: 2rem;
+            box-shadow: 0 4px 15px rgba(11, 102, 35, 0.3);
         }
 
         .area-tag {
-            background: #e1e8e1;
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--dark);
-        }
-
-        .btn-large {
             display: inline-block;
-            background: var(--green);
-            color: white !important;
-            padding: 22px 40px;
-            border-radius: 12px;
-            font-size: 1.6rem;
-            font-weight: 800;
-            text-decoration: none;
-            margin: 2rem 0;
-            transition: 0.3s;
-            box-shadow: 0 8px 25px rgba(11, 102, 35, 0.3);
+            background: #eee;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
-        .btn-large:hover { background: var(--dark); transform: translateY(-3px); }
 
         footer {
             background: #111;
-            color: #ccc;
-            padding: 4rem 1.5rem;
+            color: #aaa;
+            padding: 3rem 1.5rem;
             text-align: center;
-            margin-top: 4rem;
-        }
-
-        .cert-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 20px 0;
-            filter: grayscale(1);
-            opacity: 0.7;
         }
 
         @media(max-width:768px){
-            h1 { font-size: 2rem; }
-            .hero-section { padding: 1.5rem; }
+            body { padding-top: 50px; }
             .header-flex { justify-content: center; text-align: center; }
-            .header-content { width: 100%; }
+            .header-content { text-align: center; margin-top: 10px; width: 100%; }
+            .method-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.8rem; }
+            section { padding: 1.5rem; margin: 1rem; }
         }
     </style>
 </head>
 <body>
 
 <div class="sticky-cta">
-    <a href="tel:07375303124">📞 EMERGENCY? CALL DAVID DIRECT: 07375 303124</a>
+    <a href="tel:07375303124">📞 RING DAVID DIRECT: 07375 303124</a>
 </div>
 
 <header>
     <div class="container header-flex">
-        <div class="brand-name">Welsh Town & Country Pest Services</div>
+        <div style="font-weight:800; font-size:1.3rem;">Welsh Town & Country Pest Services</div>
         <div class="header-content">
+            <div class="trust-line">🛡️ 30+ Years Field Experience | Former Pestokil</div>
             <a href="tel:07375303124" class="header-phone-btn">07375 303124</a>
         </div>
     </div>
 </header>
 
 <div class="container">
-    <div class="hero-section">
-        <h1>Traditional Mole Trapping & Specialist Rodent Control</h1>
-        <p style="font-size: 1.2rem; color: #555;">Dedicated Rural Pest Management for Farms, Estates, and Residential Gardens.</p>
+    <section>
+        <h1>Traditional Mole Trapping & Rodent Control <br><span style="color:var(--dark); font-size: 0.7em;">Neath • Brecon • Senny Bridge • A40 Corridor</span></h1>
         
-        <img src="david-field-photo.jpg" alt="David Hill - Mole Trapping Specialist South Wales" class="main-service-img">
+        <img src="david-field-photo.jpg" alt="David Hill - Specialist Pest Trapping South Wales" class="main-service-img">
 
-        <p>Managed by <strong>David Hill</strong>, a former Pestokil (Rentokil) Technician with over <strong>30 years of fieldcraft and trapping experience</strong>. We provide a boots-on-the-ground service that relies on local knowledge and expert trapping over simple gassing or baiting.</p>
+        <p>I am David Hill. With over <strong>30 years of fieldcraft and trapping experience</strong>, I provide a traditional, hands-on approach to pest management that national companies simply cannot match. I specialise in rural and domestic pest control across the heart of South Wales.</p>
 
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>🐾 Master Mole Trapping</h3>
-                <p>Traditional "claw" and "tunnel" traps set by hand. Ideal for golf courses, livestock pastures, and heritage gardens across the A40 corridor.</p>
+        <div class="method-grid">
+            <div class="method-card">
+                <h3>🐾 Mole Trapping Specialist</h3>
+                <p>Traditional trapping methods for gardens, golf courses, and farms. No gas, no mess—just effective results.</p>
             </div>
-            <div class="feature-card">
-                <h3>🐀 Rodent Remediation</h3>
-                <p>Advanced rat and mouse control for agricultural and industrial sites. We focus on structural proofing and effective elimination.</p>
+            <div class="method-card">
+                <h3>🐀 Rat & Mouse Control</h3>
+                <p>Expert rodent remediation for homes and agricultural buildings. RSPH Certified safe use of rodenticides.</p>
             </div>
         </div>
 
-        <div class="audit-box">
-            <h3>🚜 Agricultural Audit Compliance</h3>
-            <p>We help farmers in <strong>Brecon, Senny Bridge, and Cray</strong> meet <strong>Red Tractor</strong> and environmental health standards. Our service includes full documentation, site maps, and non-toxic monitoring options for audit-ready pest management.</p>
-        </div>
-
-        <h2>Expertise Across the Heart of Wales</h2>
         <div class="seo-content">
-            <p>From the valley floors of <strong>Neath</strong> and <strong>Resolven</strong> to the rural outskirts of <strong>Ystradgynlais</strong>, pests like moles and rats require a technician who understands the land. National call-centres often send technicians who rely on chemical solutions—we lead with 30 years of <strong>trapping spot experience</strong>.</p>
+            <h2>The Art of Traditional Mole Control in Mid & South Wales</h2>
+            <p>From the valley floors of <strong>Resolven</strong> and <strong>Neath</strong> to the high ground of <strong>Senny Bridge</strong> and <strong>Brecon</strong>, moles can devastate well-kept lawns and valuable grazing land. Unlike modern "gassing" which is often hit-or-miss, I rely on 30+ years of traditional trapping. I understand the run systems and the behavior of the Welsh mole, ensuring your property is cleared efficiently and humanely.</p>
+
+            <h3>Agricultural & Farm Pest Management</h3>
+            <p>Farmers along the <strong>A40 corridor</strong> and up into the <strong>Brecon Beacons</strong> know that rodent control is a year-round battle. Rats and mice in grain stores or livestock pens require a technician who understands farm layout and livestock safety. As a former <strong>Pestokil Technician</strong>, I bring corporate-level standards of documentation and safety to a local, family-run service.</p>
+
             
-            
 
-            <h3>Wasp Nest Removal: &pound;80 (Fixed Fee)</h3>
-            <p>We offer a guaranteed, safe removal service for wasp and hornet nests. Unlike other companies, our pricing is transparent: <strong>&pound;80 for the first nest</strong>, and just <strong>&pound;20 for any additional nests</strong> treated on the same site during the same visit.</p>
+            <h3>Wasp Nest Removal: &pound;80 Flat Rate</h3>
+            <p>I provide a straightforward, guaranteed <strong>Wasp Nest Treatment for &pound;80</strong>. If you have multiple nests on the same site, additional treatments are only &pound;20 each. I cover all areas from <strong>Seven Sisters</strong> to <strong>Cray</strong> and <strong>Ammanford</strong>, providing a fast response when you have an aggressive nest near your home or business.</p>
 
-            <h3>Why Choose David Hill?</h3>
-            <ul style="padding-left: 1.5rem; margin: 1.5rem 0;">
-                <li><strong>30+ Years Experience:</strong> Decades of field-tested trapping techniques.</li>
-                <li><strong>RSPH Certified:</strong> Fully qualified in the safe use of rodenticides (SUoR).</li>
-                <li><strong>Former Rentokil Expert:</strong> Corporate-level standards with local, family-run pricing.</li>
-                <li><strong>Rural Specialist:</strong> We understand farm livestock safety and estate management.</li>
-            </ul>
+            <h3>Why Experience Matters in Pest Control</h3>
+            <p>Pest control isn't just about setting a trap or putting down bait; it's about understanding the "why" behind the infestation. My three decades of field spot and trapping experience allow me to identify the entry points and environmental factors that others miss. Whether it's a squirrel in the loft or a persistent rat problem in a terraced row, I provide a permanent solution rather than a temporary fix.</p>
+
+            <h3>Covering the Heart of the Valleys & The Beacons</h3>
+            <p>I am based in <strong>Resolven</strong> and operate daily across a wide patch. If you are looking for a local man who knows the land and the local pests, ring me direct. I cover:</p>
+            <div class="area-tags">
+                <span class="area-tag">Neath</span> <span class="area-tag">Brecon</span> <span class="area-tag">Senny Bridge</span>
+                <span class="area-tag">Resolven</span> <span class="area-tag">Glynneath</span> <span class="area-tag">Cray</span>
+                <span class="area-tag">Ammanford</span> <span class="area-tag">Seven Sisters</span> <span class="area-tag">Ystradgynlais</span>
+            </div>
+
+            <h3>RSPH Certified & Fully Insured</h3>
+            <p>I have completed the <strong>RSPH Safe Use of Rodenticides</strong> and maintain full insurance for all domestic and agricultural work. When you hire Welsh Town & Country, you are getting a technician who is qualified, experienced, and dedicated to the job.</p>
         </div>
 
-        <div style="text-align:center;">
-            <a href="tel:07375303124" class="btn-large">GET A QUOTE: 07375 303124</a>
-        </div>
-
-        <div class="area-tags">
-            <span class="area-tag">Neath</span> <span class="area-tag">Resolven</span> <span class="area-tag">Cray</span>
-            <span class="area-tag">Senny Bridge</span> <span class="area-tag">Brecon</span> <span class="area-tag">Talgarth</span>
-            <span class="area-tag">Ammanford</span> <span class="area-tag">Seven Sisters</span> <span class="area-tag">Glynneath</span>
-        </div>
-    </div>
+        <a href="tel:07375303124" class="btn-large">GET A QUOTE FROM DAVID</a>
+    </section>
 </div>
 
 <footer>
     <div class="container">
-        <p style="font-weight:800; color:white; margin-bottom:10px;">Welsh Town & Country Pest Services</p>
-        <p>© 2026 | RSPH SUoR Certified | Fully Insured</p>
-        <p>Operated by David Hill: Former Pestokil Technician</p>
-        <div class="cert-icons">
-            <span>🛡️ Fully Insured</span>
-            <span>🎓 RSPH Certified</span>
-            <span>🚜 Farm Specialist</span>
-        </div>
-        <p style="margin-top: 25px;"><a href="https://www.valleypestexperts.co.uk/" style="color:var(--gold); text-decoration:none;">← Return to Main Site</a></p>
+        <p><strong>Welsh Town & Country Pest Services</strong></p>
+        <p>© 2026 | Operated by David Hill | 30+ Years Experience</p>
+        <p>RSPH SUoR Certified | Fully Insured</p>
+        <p style="margin-top: 15px;"><a href="https://www.valleypestexperts.co.uk/" style="color:var(--gold)">← Return to main site</a></p>
     </div>
 </footer>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Welsh Town & Country Pest Services",
-  "description": "Professional mole trapping and rodent control specialist covering Neath and Brecon.",
-  "telephone": "07375303124",
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "Neath",
-    "addressCountry": "GB"
-  }
-}
-</script>
 
 </body>
 </html>
