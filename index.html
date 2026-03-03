@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welsh Town and Country Pest Services | Pet-Safe Pest Control & Wasp Removal South Wales</title>
-<meta name="description" content="Pet-safe, poison-free pest control across South & Mid Wales. 24/7 flea treatment, wasp nest removal, mole catching & Red Tractor farm protection. Neath, Swansea, Brecon, Ammanford. David Hill – call 07375 303124.">
-<meta name="keywords" content="Welsh Town and Country Pest Services, pet safe pest control Neath, flea treatment Neath, wasp nest removal Neath, wasp removal South Wales, poison free pest control pets, rat catcher Merthyr, mole catcher Wales, farm pest control Brecon, solar farm pest control, Red Tractor audit 2026">
+<title>Welsh Town and Country Pest Services | Pet-Safe Pest Control South Wales</title>
+<meta name="description" content="Pet-safe, poison-free pest control across South & Mid Wales by David Hill (Ex-Pestokil). £80 wasp removal, mole catching & Red Tractor farm protection. Neath, Swansea, Brecon.">
+<meta name="keywords" content="Welsh Town and Country Pest Services, pet safe pest control Neath, flea treatment Neath, wasp nest removal Neath, wasp removal South Wales, poison free pest control pets, rat catcher Merthyr, mole catcher Wales, farm pest control Brecon, solar farm pest control, Red Tractor audit 2026, David Hill pest control">
 <meta name="robots" content="index, follow">
 <meta name="author" content="David Hill, Welsh Town and Country Pest Services">
 
-<meta property="og:title" content="Welsh Town and Country Pest Services | Pet-Safe & Wasp Removal South Wales">
-<meta property="og:description" content="Expert poison-free pest control. Safe flea & wasp treatments for homes with pets. Serving Neath, Swansea, Brecon, Ammanford & Mid Wales. 24/7 – 07375 303124.">
+<meta property="og:title" content="Welsh Town and Country Pest Services | Pet-Safe & Wasp Removal">
+<meta property="og:description" content="Expert poison-free pest control. Safe flea & wasp treatments for homes with pets. Serving Neath, Swansea, Brecon & the Valleys. 24/7 – 07375 303124.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.valleypestexperts.co.uk/">
 <meta property="og:image" content="/images/logo.png">
@@ -32,10 +32,11 @@
 html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
 body { line-height:1.6; color:#222; background:#f4f7f4; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
 header {
-    background:linear-gradient(135deg,var(--dark)0%,var(--blue)100%);
+    background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 100%);
     color:#fff;
-    padding:3rem 1rem;
+    padding:3.5rem 1rem;
     text-align:center;
     border-bottom:5px solid var(--gold);
 }
@@ -45,13 +46,16 @@ header {
     color:var(--gold);
     text-decoration:none;
     display:inline-block;
-    margin-top:10px;
-    padding:10px 25px;
-    background: rgba(0,0,0,0.2);
+    margin-top:15px;
+    padding:10px 30px;
+    background: rgba(0,0,0,0.3);
     border-radius:50px;
     border:2px solid var(--gold);
+    transition: 0.3s;
 }
-.section { max-width:1200px; margin:2rem auto; padding:0 1.5rem; }
+.header-phone:hover { background: var(--gold); color: var(--dark); }
+
+.section { max-width:1200px; margin:2.5rem auto; padding:0 1.5rem; }
 .grid {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
@@ -64,19 +68,25 @@ header {
     box-shadow:var(--shadow);
     border-bottom:5px solid var(--green);
     transition:0.3s;
+    display: flex;
+    flex-direction: column;
 }
 .card:hover { transform:translateY(-5px);}
-.card h3 { color:var(--green); padding:1.2rem 1rem 0.5rem; }
-.card p, .card ul, .card a { padding:0 1.2rem 1.5rem; font-size:1rem; }
-.card ul { list-style:disc; margin-left:20px; }
-.card a {
-    display:inline-block;
-    color:var(--blue);
-    text-decoration:none;
-    font-weight:600;
-    margin-top:5px;
+.card h3 { color:var(--green); padding:1.2rem 1.2rem 0.5rem; }
+.card p, .card ul { padding:0 1.2rem 1.5rem; font-size:1rem; flex-grow: 1; }
+.card ul { list-style:none; }
+.card li::before { content: "✓ "; color: var(--green); font-weight: bold; }
+
+.price-tag {
+    background: var(--gold);
+    color: var(--dark);
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.card a:hover { text-decoration:underline; }
+
 .links-section {
     background:white;
     padding:2rem;
@@ -90,8 +100,18 @@ header {
     padding:0;
 }
 .links-section li { margin-bottom:10px; }
-.links-section a { color:var(--blue); text-decoration:none; }
+.links-section a { color:var(--blue); text-decoration:none; font-weight: 600; }
 .links-section a:hover { text-decoration:underline;}
+
+.partner-box {
+    background: #fff;
+    border-left: 8px solid var(--blue);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+}
+
 footer {
     background:#111;
     color:white;
@@ -100,13 +120,13 @@ footer {
     border-top:8px solid var(--gold);
 }
 footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
+
 /* FAQ Styles */
 .faq-container {
     background:white;
     border-radius:20px;
     box-shadow:var(--shadow);
     padding:2rem;
-    margin-top:2rem;
 }
 .faq-item {
     margin-bottom:1rem;
@@ -117,33 +137,19 @@ footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
     font-weight:800;
     color:var(--green);
     margin-bottom:0.5rem;
-    font-size:1.1rem;
 }
-.faq-answer { color:#444; }
-/* Map Container */
-.map-container {
-    margin:3rem auto;
-    text-align:center;
-    max-width:1200px;
-    padding:0 1.5rem;
-}
-.map-container h2 {
-    color:var(--dark);
-    margin-bottom:1.5rem;
-    font-size:2rem;
-}
+
 .google-map {
     border-radius:15px;
     overflow:hidden;
     box-shadow:var(--shadow);
     border:5px solid white;
+    margin: 2rem 0;
 }
+
 @media(max-width:768px){
     .header-phone{font-size:1.6rem;}
-    .card a{font-size:1.2rem;}
     .links-section ul{columns:1;}
-    .faq-container { padding:1rem; }
-    .google-map iframe { height:300px; }
 }
 </style>
 
@@ -152,10 +158,11 @@ footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Welsh Town and Country Pest Services",
-  "image": "https://www.welshtownandcountry.co.uk/images/logo.png",
+  "image": "https://www.valleypestexperts.co.uk/images/logo.png",
   "@id": "https://www.valleypestexperts.co.uk",
   "url": "https://www.valleypestexperts.co.uk/",
   "telephone": "+447375303124",
+  "priceRange": "£80+",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Neath",
@@ -166,15 +173,7 @@ footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
     "@type": "GeoCoordinates",
     "latitude": 51.6638,
     "longitude": -3.8044
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }],
-  "sameAs": ["https://www.google.com/maps?cid=14588226068222627931"],
-  "priceRange": "££"
+  }
 }
 </script>
 </head>
@@ -182,198 +181,141 @@ footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
 
 <header>
     <div class="container">
-        <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" style="max-width:200px;">
+        <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" style="max-width:200px; margin-bottom: 15px;">
         <h1>Welsh Town and Country Pest Services</h1>
-        <p>30+ Years Experience | Poison-Free & Pet-Safe Solutions | 24/7 Emergency Response</p>
-        <p><a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a></p>
+        <p>30+ Years Professional Field Experience | Operated by David Hill (Ex-Pestokil)</p>
+        <p>Poison-Free & Pet-Safe Solutions | RSPH Certified</p>
+        <a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a>
     </div>
 </header>
 
-<main>
-    <!-- Quick Navigation (new) -->
+<main class="container">
+    
     <section class="links-section">
-        <div class="container">
-            <h2>Quick Access to Services</h2>
+        <h2>Quick Access to Services</h2>
+        <ul>
+            <li><a href="pet-safe-flea-treatment.html">Pet-Safe Flea Treatment Guide</a></li>
+            <li><a href="wasp-removal.html">Wasp & Hornet Nest Removal</a></li>
+            <li><a href="farm-pest-management.html">Farm & Rural Pest Management</a></li>
+            <li><a href="solar-farm-pest-control.html">Solar Farm Protection</a></li>
+            <li><a href="#faq">Pricing & FAQ</a></li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Expert Pest Control Across South & Mid Wales</h2>
+        <p>Welcome to <strong>Welsh Town and Country Pest Services</strong>. Operated by David Hill with over 30 years of field spotting and trapping experience, we provide technical, poison-free solutions for homes, farms, and businesses. From professional rat-proofing to traditional mole catching, we cover Neath, Swansea, Brecon, Ammanford, and the Valleys 24/7.</p>
+    </section>
+
+    <section class="partner-box">
+        <h2>🐾 Specialized Pet-Safe Home Protection</h2>
+        <p>At Welsh Town and Country, we understand that pets are family. We specialize in <strong>poison-free and pet-safe</strong> solutions, ensuring your dogs, cats, and home stay protected without the risk of harmful residues.</p>
+        <p style="margin-top:1rem;">We proudly partner with <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener noreferrer"><strong>Julie’s Pet Scanning and Microchipping</strong></a> to give South Wales pet owners complete peace of mind. If your home requires flea or pest treatment, Julie can safely walk, bathe, or care for your pets at her professional facilities in Neath and Swansea until your home is pest-free and safe for their return.</p>
+        <p style="margin-top:1rem;"><strong>Read our guide:</strong> <a href="pet-safe-flea-treatment.html">Pet-Safe Flea Treatment in South Wales →</a></p>
+    </section>
+
+    <section class="grid">
+        <div class="card">
+            <h3>🐝 Wasps & Hornets</h3>
+            <div style="padding: 0 1.2rem;"><span class="price-tag">£80 Fixed Price</span></div>
+            <p>Rapid removal for homes and holiday lets. Safe for households with pets.</p>
             <ul>
-                <li><a href="pet-safe-flea-treatment.html">Pet-Safe Flea Treatment Guide</a></li>
-                <li><a href="wasp-removal.html">Wasp & Hornet Nest Removal</a></li>
-                <li><a href="farm-pest-management.html">Farm & Rural Pest Management</a></li>
-                <li><a href="solar-farm-pest-control.html">Solar Farm Protection</a></li>
+                <li>£20 for each extra nest (same site)</li>
+                <li>Same-day emergency response</li>
+                <li>Safe for dogs, cats, and gardens</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🐀 Rat & Mouse Proofing</h3>
+            <p>Technical exclusion using 316-grade stainless steel—no reliance on poisons.</p>
+            <ul>
+                <li>CCTV Drain Surveys</li>
+                <li>Stainless steel rat valves</li>
+                <li>Kitchen & loft proofing</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🌾 Farms & Rural</h3>
+            <p>Audit-ready management for <strong>Red Tractor 2026</strong> compliance.</p>
+            <ul>
+                <li>Traditional mole catching</li>
+                <li>Feed store rodent proofing</li>
+                <li>Poison-free CRRU compliance</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>☀️ Solar Asset Protection</h3>
+            <p>Protecting PV arrays and inverters from rodent damage.</p>
+            <ul>
+                <li>Cable tray rodent proofing</li>
+                <li>Inverter housing exclusion</li>
+                <li>Perimeter monitoring</li>
             </ul>
         </div>
     </section>
 
-    <section class="section">
-        <div class="container">
-            <h2>Expert Pest Control Across South & Mid Wales</h2>
-            <p>Welcome to the master hub. Operated by <strong>David Hill</strong> (ex-Pestokil) with over 30 years experience in poison-free, pet-safe pest control, mole catching, wasp removal and audit-ready farm protection across South & Mid Wales.</p>
-        </div>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455344.61371057044!2d-4.250082706936623!3d51.828720867268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1770342264570!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Location Map"></iframe>
+    </div>
+
+    <section class="links-section">
+        <h2>📍 Regional Hubs & Towns</h2>
+        <ul>
+            <li><strong>Main Hubs:</strong></li>
+            <li><a href="https://ammanford.valleypestexperts.co.uk/">Ammanford</a></li>
+            <li><a href="https://neathporttalbot.valleypestexperts.co.uk/">Neath Port Talbot</a></li>
+            <li><a href="https://merthyrtydfil.valleypestexperts.co.uk/">Merthyr Tydfil</a></li>
+            <li><a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Beacons</a></li>
+            <li><a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a></li>
+            <li><strong>Valleys & Mid Wales:</strong></li>
+            <li>Resolven (SA11)</li>
+            <li>Glynneath (SA11)</li>
+            <li>Aberfan (CF48)</li>
+            <li>Rhymney (NP22)</li>
+            <li>Llandeilo (SA19)</li>
+            <li>Crickhowell (NP8)</li>
+        </ul>
     </section>
 
-    <!-- Pet-Friendly Intro -->
-    <section class="section">
-        <div class="container">
-            <h2>Pet-Friendly & Poison-Free Pest Control</h2>
-            <p>At Welsh Town and Country Pest Services, we know pets are family. That's why we specialise in pet-safe, poison-free solutions — including professional flea treatments and wasp nest removal — so your dogs, cats and home stay protected.</p>
-            <p>We proudly partner with <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener noreferrer">Julie’s Pet Scanning and Microchipping</a> to give South Wales pet owners complete peace of mind. For pet ultrasound scanning, microchipping, dog walking and sitting in Neath, Swansea, Port Talbot and Aberdare, visit their site: <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener noreferrer">pet scanning and microchipping in South Wales</a>. If pets are present during treatment, Julie can safely walk, bathe or care for them until your home is pest-free.</p>
-            <p>Many local families in Neath, Swansea and beyond trust this combined approach. Pet safety is as important as property protection.</p>
-            <p><strong>Read our full guide:</strong> <a href="pet-safe-flea-treatment.html">Pet-Safe Flea Treatment in Neath & Swansea – Poison-Free Home Protection</a></p>
-        </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="section">
-        <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <h3>🌾 Farms & Rural</h3>
-                    <p>Audit-ready pest management including mole catching, rodent proofing and Red Tractor compliance.</p>
-                    <ul>
-                        <li>Feed store rodent proofing</li>
-                        <li>Traditional mole catching</li>
-                        <li>Rabbit & wildlife management</li>
-                        <li>Poison-free CRRU compliance</li>
-                    </ul>
-                    <a href="/farm-pest-management.html">View Farm Services →</a>
-                </div>
-                <div class="card">
-                    <h3>☀️ Solar Asset Protection</h3>
-                    <p>Protecting PV arrays and inverters from rodents with permanent exclusion methods.</p>
-                    <ul>
-                        <li>Cable tray rodent proofing</li>
-                        <li>Smart inverter housing exclusion</li>
-                        <li>Perimeter monitoring</li>
-                        <li>24/7 rapid response</li>
-                    </ul>
-                    <a href="/solar-farm-pest-control.html">View Solar Services →</a>
-                </div>
-                <div class="card">
-                    <h3>🏠 Homes & Holiday Lets</h3>
-                    <p>Specialist residential protection. <strong>Pet-safe flea & wasp treatments</strong> available through our local pet partnership — ideal for homes with dogs and cats.</p>
-                    <ul>
-                        <li>Rat-proofing kitchens & lofts</li>
-                        <li>CCTV drain surveys</li>
-                        <li>Stainless steel rat valves</li>
-                        <li>Rent Smart Wales compliance</li>
-                        <li>Safe flea & wasp treatment for pet homes</li>
-                    </ul>
-                    <a href="/holiday-homes-pest-control.html">View Residential Services →</a>
-                </div>
-                <div class="card">
-                    <h3>🍔 Takeaways & Shops</h3>
-                    <p>Commercial contracts, discreet visits and full EHO reporting.</p>
-                    <ul>
-                        <li>Fly & wasp control</li>
-                        <li>Electronic fly killers (EFK)</li>
-                        <li>Cockroach & store pest eradication</li>
-                        <li>Cost-effective service</li>
-                    </ul>
-                    <a href="https://ammanford.valleypestexperts.co.uk/">View Commercial Hub →</a>
-                </div>
-                <div class="card">
-                    <h3>🐝 Wasps & Hornets</h3>
-                    <p>Rapid, professional nest removal for homes, businesses & holiday lets. <strong>Pet-safe options</strong> available.</p>
-                    <ul>
-                        <li>£80 fixed price per nest</li>
-                        <li>£20 each additional nest on same site</li>
-                        <li>Same-day / emergency response</li>
-                    </ul>
-                    <a href="/wasp-removal.html">View Wasp Removal Service →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Google Maps Embed -->
-    <section class="map-container">
-        <div class="container">
-            <h2>📍 Serving South & Mid Wales</h2>
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455344.61371057044!2d-4.250082706936623!3d51.828720867268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1770342264570!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Welsh Town and Country Pest Services Location Map"></iframe>
-            </div>
-            <p style="margin-top: 1rem;"><strong>Coverage Area:</strong> Neath, Merthyr Tydfil, Brecon, Ammanford, Swansea, Cardiff, and all surrounding areas</p>
-        </div>
-    </section>
-
-    <!-- Regional Hubs -->
-    <section class="section links-section">
-        <div class="container">
-            <h2>📍 Regional & Town Hubs</h2>
-            <ul>
-                <li><strong>Regional Hub Sites:</strong></li>
-                <li><a href="https://ammanford.valleypestexperts.co.uk/">Ammanford Experts</a></li>
-                <li><a href="https://neathporttalbot.valleypestexperts.co.uk/">Neath Port Talbot Hub</a></li>
-                <li><a href="https://merthyrtydfil.valleypestexperts.co.uk/">Merthyr Tydfil Hub</a></li>
-                <li><a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Beacons Hub</a></li>
-                <li><a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a></li>
-                <li><strong>Neath & Valleys:</strong></li>
-                <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control.html">Resolven (SA11)</a></li>
-                <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control.html">Glynneath (SA11)</a></li>
-                <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control.html">Skewen (SA10)</a></li>
-                <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/briton-ferry-rat-control.html">Briton Ferry</a></li>
-                <li><a href="https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control.html">Tonna (SA11)</a></li>
-                <li><strong>Merthyr & Heads:</strong></li>
-                <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/aberfan-troedyrhiw-cf48.html">Aberfan (CF48)</a></li>
-                <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/nelson-cf46.html">Nelson (CF46)</a></li>
-                <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/rhymney-np22.html">Rhymney (NP22)</a></li>
-                <li><a href="https://merthyr.welshtownandcountry.co.uk/hypapages/dowlais-gurnos-cf48.html">Dowlais (CF48)</a></li>
-                <li><strong>Tywi & Beacons:</strong></li>
-                <li><a href="https://brecon.welshtownandcountry.co.uk/llandeilo-pest-control.html">Llandeilo (SA19)</a></li>
-                <li><a href="https://brecon.welshtownandcountry.co.uk/sennybridge-pest-control.html">Sennybridge (LD3)</a></li>
-                <li><a href="https://brecon.welshtownandcountry.co.uk/crickhowell-pest-control.html">Crickhowell (NP8)</a></li>
-                <li><a href="https://brecon.welshtownandcountry.co.uk/llangadog-pest-control.html">Llangadog (SA19)</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
     <section class="section" id="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">1. What areas in Wales do you cover?</div>
-                    <div class="faq-answer">South and Mid Wales including Neath, Merthyr Tydfil, Brecon, Ammanford, Swansea, Cardiff and surrounding valleys/towns (Resolven, Glynneath, Skewen, Aberfan, Rhymney, Llandeilo, Crickhowell etc.).</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">2. Are your rodent control methods poison-free?</div>
-                    <div class="faq-answer">Yes — we specialise in poison-free rodent control, fully CRRU compliant, using humane traps, exclusion and monitoring to protect pets, wildlife and the environment.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">3. How much does wasp nest removal cost?</div>
-                    <div class="faq-answer">Fixed £80 per nest, £20 for each additional nest on the same property. Includes full treatment and prevention advice. Pet-safe coordination available.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">4. Do you offer farm pest control for Red Tractor audits?</div>
-                    <div class="faq-answer">Yes — audit-ready pest management designed for Red Tractor 2026 compliance, including proofing, mole catching and full documentation.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">5. What's your experience with mole catching?</div>
-                    <div class="faq-answer">Over 30 years, specialising in traditional mole catching with proven methods. Effective removal while maintaining environmental balance.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">6. Are you available for emergency pest control?</div>
-                    <div class="faq-answer">Yes — 24/7 emergency service. Call 07375 303124 anytime for urgent infestations (rats, wasps, fleas etc.).</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">7. Do you offer pet-safe flea & wasp treatments?</div>
-                    <div class="faq-answer">Yes — all flea and wasp treatments are pet-safe and poison-free where possible. We partner with Julie’s Pet Services (Neath/Swansea) so your pets can be walked, bathed or cared for during treatment and returned to a safe home.</div>
-                </div>
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">How much does wasp removal cost?</div>
+                <div class="faq-answer">Treatment is a fixed £80 per nest. If there are additional nests on the same site, they are charged at £20 each.</div>
+            </div>
+         <div class="faq-item">
+            <div class="faq-question">Are your flea treatments safe for my pets?</div>
+         <div class="faq-answer">
+        Absolutely. While dogs cannot be present for 2 hours after the treatment is completed, our partnership with <strong>Julie’s Pet Services</strong> makes this easy to manage. We can arrange for your dog to be taken for a walk during this time, or even booked in for a professional flea bath and shampoo, returning them to a clean and ready for they safe home.
+    </div>
+          </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer 24/7 service?</div>
+                <div class="faq-answer">Yes, we provide 24/7 emergency response for urgent infestations like rats, wasps, or fleas across South and Mid Wales.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Are you insured and certified?</div>
+                <div class="faq-answer">Yes. We are RSPH SUoR Certified, fully insured, and David Hill brings over 30 years of field experience, including time as a Pestokil technician.</div>
             </div>
         </div>
     </section>
+
 </main>
 
 <footer>
     <div class="container">
         <strong>Welsh Town and Country Pest Services</strong>
-        <p>© 2026 | RSPH SUoR Certified | Fully Insured | Operated by David Hill (Ex-Pestokil)</p>
-        <p>📞 <a href="tel:07375303124">24/7 Emergency: 07375 303124</a></p>
-        <p style="margin:1.5rem 0; font-size:1rem;">
-            Proudly partnering with <a href="https://www.juliespetservices.co.uk" target="_blank" rel="noopener noreferrer">Julie’s Pet Services</a> for pet-safe home & pest care across South Wales
+        <p>© 2026 | RSPH SUoR Certified | Fully Insured</p>
+        <p>Operated by David Hill | 30+ Years Field Experience | Former Pestokil Technician</p>
+        <p style="margin: 1.5rem 0;">
+            📞 <a href="tel:07375303124" style="font-size: 1.5rem;">07375 303124</a>
         </p>
-        <p><a href="https://www.google.com/maps?cid=14588226068222627931" target="_blank">⭐ View Google Business Profile & Reviews</a></p>
-        <p style="margin-top:2rem; font-size:0.8rem; opacity:0.7;">Specialist in poison-free rodent eradication, traditional mole trapping, pet-safe wasp/flea treatment and audit-ready farm protection across Wales.</p>
+        <p>Partnered with <a href="https://www.juliespetservices.co.uk" target="_blank">Julie’s Pet Services</a> for specialized pet-safe care.</p>
+        <p style="margin-top:2rem; font-size:0.8rem; opacity:0.6;">Web Services via valleypestexperts.co.uk</p>
     </div>
 </footer>
 
