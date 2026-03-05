@@ -9,13 +9,84 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="David Hill, Welsh Town and Country Pest Services">
 
+<!-- Open Graph -->
 <meta property="og:title" content="Rat Control in Brecon | Valleypestexperts.co.uk">
 <meta property="og:description" content="Expert rat removal in Brecon & surrounding South Wales areas. Pet-safe solutions by RSPH certified David Hill. 24/7 emergency service.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.valleypestexperts.co.uk/brecon/rat-control/">
 <meta property="og:image" content="/images/logo.png">
 
-<link rel="stylesheet" href="/styles/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green: #0b6623;
+    --dark: #083d14;
+    --blue: #0066cc;
+    --gold: #ffcc00;
+    --bg: #f8f9fa;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
+body { line-height:1.6; color:#222; background:#f4f7f4; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+header {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 100%);
+    color:#fff;
+    padding:3rem 1rem;
+    text-align:center;
+    border-bottom:5px solid var(--gold);
+}
+.header-phone {
+    font-size:2rem;
+    font-weight:900;
+    color:var(--gold);
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 30px;
+    background: rgba(0,0,0,0.3);
+    border-radius:50px;
+    border:2px solid var(--gold);
+    transition: 0.3s;
+}
+.header-phone:hover { background: var(--gold); color: var(--dark); }
+
+.section { margin:2.5rem 0; padding:0 1rem; }
+h2 { color:var(--green); margin-bottom:1rem; }
+ul, ol { margin-left:1.2rem; margin-bottom:1rem; }
+ul li::before { content: "✓ "; color: var(--green); font-weight:bold; }
+
+.links-section ul { list-style:none; padding:0; }
+.links-section li { margin-bottom:0.7rem; }
+.links-section a { color:var(--blue); text-decoration:none; font-weight:600; }
+.links-section a:hover { text-decoration:underline; }
+
+footer {
+    background:#111;
+    color:white;
+    padding:4rem 1rem;
+    text-align:center;
+    border-top:8px solid var(--gold);
+}
+footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
+
+.google-map {
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:5px solid white;
+    margin: 2rem 0;
+}
+
+@media(max-width:768px){
+    .header-phone{font-size:1.6rem;}
+}
+</style>
 
 <script type="application/ld+json">
 {
@@ -41,10 +112,10 @@
 
 <header>
     <div class="container">
-        <img src="/images/logo.png" alt="Welsh Town and Country Pest Services" style="max-width:180px; margin-bottom: 15px;">
+        <img src="/images/logo.png" alt="Welsh Town and Country Pest Services Logo" style="max-width:180px; margin-bottom: 15px;">
         <h1>Rat Control Services in Brecon & the Brecon Beacons</h1>
-        <p>Operated by David Hill | Ex-Pestokil Technician | RSPH Certified | 30+ Years Experience</p>
-        <a href="tel:07375303124" class="header-phone">24/7 Emergency: 07375 303124</a>
+        <p>Operated by David Hill | Ex-Pestokil Technician | RSPH SUoR Certified | 30+ Years Experience</p>
+        <a href="tel:07375303124" class="header-phone" aria-label="Call 07375 303124 for rat control Brecon">24/7 Emergency: 07375 303124</a>
     </div>
 </header>
 
@@ -52,17 +123,17 @@
 
 <section class="section">
     <h2>Professional Rat Control in Brecon</h2>
-    <p>Rats in Brecon can damage property, contaminate food, and spread disease. <strong>Welsh Town and Country Pest Services</strong> offers expert, pet-safe rat removal and prevention across Brecon and surrounding areas, including the Brecon Beacons, Bwlch, Talgarth, Llangorse, Crickhowell, and Sennybridge.</p>
-    <p>Our team provides rapid, discreet treatments for homes, farms, and commercial properties using humane traps, exclusion methods, and ongoing monitoring to ensure the problem is fully eradicated.</p>
+    <p>Rats in Brecon can damage property, contaminate food, and spread disease. <strong>Welsh Town and Country Pest Services</strong> offers expert, pet-safe rat removal and prevention across Brecon and nearby villages including Bwlch, Talgarth, Llangorse, Crickhowell, and Sennybridge.</p>
+    <p>Our certified technician provides rapid, discreet treatments for homes, farms, and businesses using humane traps, exclusion methods, and ongoing monitoring to ensure complete eradication.</p>
 </section>
 
 <section class="section">
-    <h2>Why Choose Us in Brecon?</h2>
+    <h2>Why Choose Us?</h2>
     <ul>
         <li>30+ years of hands-on pest control experience</li>
-        <li>Ex-Pestokil technician, RSPH certified</li>
-        <li>Pet-safe solutions for domestic and farm environments</li>
-        <li>Same-day emergency response in Brecon & local villages</li>
+        <li>Ex-Pestokil technician, RSPH SUoR certified</li>
+        <li>Pet-safe solutions for homes and farms</li>
+        <li>Same-day emergency response in Brecon & surrounding villages</li>
         <li>Audit-ready reporting for commercial clients and farms</li>
     </ul>
 </section>
@@ -70,31 +141,31 @@
 <section class="section">
     <h2>Our Rat Control Process</h2>
     <ol>
-        <li><strong>Inspection:</strong> Survey of homes, gardens, barns, drains, and lofts.</li>
-        <li><strong>Action Plan:</strong> Humane traps, proofing, and monitoring tailored to your property.</li>
-        <li><strong>Emergency Response:</strong> Same-day treatment for urgent infestations in Brecon and surroundings.</li>
+        <li><strong>Inspection:</strong> Thorough survey of properties, lofts, drains, barns, and gardens.</li>
+        <li><strong>Action Plan:</strong> Humane traps, proofing, and monitoring customised for your property.</li>
+        <li><strong>Emergency Response:</strong> Same-day treatment for urgent infestations.</li>
         <li><strong>Follow-Up & Prevention:</strong> Long-term monitoring and advice to prevent reinfestation.</li>
     </ol>
 </section>
 
 <section class="section">
-    <h2>Areas We Cover Around Brecon</h2>
+    <h2>Areas We Serve Around Brecon</h2>
     <ul>
         <li>Brecon Town Centre & Brecon Beacons</li>
         <li>Bwlch, Talgarth & Hay-on-Wye outskirts</li>
-        <li>Llangorse Lake & surrounding villages</li>
-        <li>Crickhowell & surrounding Usk Valley areas</li>
+        <li>Llangorse Lake & nearby villages</li>
+        <li>Crickhowell & Usk Valley areas</li>
         <li>Sennybridge & Defynnog areas</li>
     </ul>
 </section>
 
 <section class="section">
     <h2>Emergency Rat Removal</h2>
-    <p>Rats reproduce quickly, so timely intervention is essential. Call <strong>07375 303124</strong> for immediate, professional rat removal anywhere in Brecon or nearby villages. Our certified technician will assess, treat, and secure your property the same day.</p>
+    <p>Rats breed quickly, so immediate intervention is essential. Call <strong>07375 303124</strong> for prompt, professional rat removal in Brecon and surrounding villages. Our certified technician will inspect, treat, and secure your property the same day.</p>
 </section>
 
-<section class="section">
-    <h2>Related Services</h2>
+<section class="links-section">
+    <h2>Related Pest Control Services</h2>
     <ul>
         <li><a href="/services/mole-control.html">Mole Control in Brecon</a></li>
         <li><a href="/services/wasp-removal.html">Wasp Nest Removal Brecon</a></li>
@@ -103,10 +174,14 @@
     </ul>
 </section>
 
+<div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-3.3900!3d51.9470!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e0bd74a29bb6f%3A0x141ca663679e0707!2sBrecon%2C%20Powys!5e0!3m2!1sen!2suk!4v1770342264570!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Brecon Rat Control Location"></iframe>
+</div>
+
 <footer>
     <div class="container">
         <strong>Welsh Town and Country Pest Services</strong>
-        <p>© 2026 | RSPH Certified | Fully Insured</p>
+        <p>© 2026 | RSPH SUoR Certified | Fully Insured</p>
         <p>David Hill – Ex-Pestokil Technician | 30+ Years Experience</p>
         <p>📞 <a href="tel:07375303124">07375 303124</a></p>
         <p>Serving Brecon, Bwlch, Talgarth, Llangorse, Crickhowell & Sennybridge</p>
