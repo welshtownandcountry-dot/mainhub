@@ -4,105 +4,242 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pest Control for Shops & Takeaways | Cardiff & South Wales</title>
-<meta name="description" content="Professional, pet-safe pest control for shops, takeaways, and food businesses across Cardiff, Newport & South Wales. Same-day service by David Hill, ex-Pestokil.">
-<meta name="keywords" content="pest control Cardiff, pest control South Wales, takeaway pest control, food business pest control, shop pest control, rat control Cardiff, wasp removal South Wales, poison-free pest control, pet safe pest control, David Hill">
+<meta name="description" content="Professional pest control for shops, takeaways, and food businesses in Cardiff, Newport & South Wales. Same-day service by David Hill, ex-Pestokil.">
+<meta name="keywords" content="pest control Cardiff, takeaway pest control, shop pest control, food business pest control, rat control Cardiff, wasp removal South Wales, David Hill pest control, South Wales pest control">
 <meta name="robots" content="index, follow">
 <meta name="author" content="David Hill, Welsh Town and Country Pest Services">
 
 <meta property="og:title" content="Pest Control for Shops & Takeaways | Cardiff & South Wales">
-<meta property="og:description" content="Protect your food business from pests with fast, discreet, poison-free solutions. 24/7 service by certified ex-Pestokil technician David Hill.">
+<meta property="og:description" content="Protect your food business from rats, wasps, and other pests with fast, professional solutions. Serving Cardiff, Newport & South Wales.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.valleypestexperts.co.uk/cardiff-shops.html">
 <meta property="og:image" content="/images/logo.png">
 
-<link rel="stylesheet" href="styles/styles.css">
+<style>
+:root {
+    --green: #0b6623;
+    --dark: #083d14;
+    --blue: #0066cc;
+    --gold: #ffcc00;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+html { scroll-behavior: smooth; font-family:'Inter', sans-serif; }
+body { line-height:1.6; color:#222; background:#f4f7f4; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+header {
+    background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 100%);
+    color:#fff;
+    padding:3.5rem 1rem;
+    text-align:center;
+    border-bottom:5px solid var(--gold);
+}
+.header-phone {
+    font-size:2.2rem;
+    font-weight:900;
+    color:var(--gold);
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 30px;
+    background: rgba(0,0,0,0.3);
+    border-radius:50px;
+    border:2px solid var(--gold);
+    transition: 0.3s;
+}
+.header-phone:hover { background: var(--gold); color: var(--dark); }
+
+.section { max-width:1200px; margin:2.5rem auto; padding:0 1.5rem; }
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+.card {
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border-bottom:5px solid var(--green);
+    transition:0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover { transform:translateY(-5px);}
+.card h3 { color:var(--green); padding:1.2rem 1.2rem 0.5rem; }
+.card p, .card ul { padding:0 1.2rem 1.5rem; font-size:1rem; flex-grow: 1; }
+.card ul { list-style:none; }
+.card li::before { content: "✓ "; color: var(--green); font-weight: bold; }
+
+.price-tag {
+    background: var(--gold);
+    color: var(--dark);
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.links-section {
+    background:white;
+    padding:2rem;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    margin:1.5rem auto;
+}
+.links-section ul {
+    columns:2;
+    list-style:none;
+    padding:0;
+}
+.links-section li { margin-bottom:10px; }
+.links-section a { color:var(--blue); text-decoration:none; font-weight: 600; }
+.links-section a:hover { text-decoration:underline;}
+
+.partner-box {
+    background: #fff;
+    border-left: 8px solid var(--blue);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+}
+
+footer {
+    background:#111;
+    color:white;
+    padding:4rem 1.5rem;
+    text-align:center;
+    border-top:8px solid var(--gold);
+}
+footer a { color:var(--gold); text-decoration:none; font-weight:bold; }
+
+.faq-container {
+    background:white;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    padding:2rem;
+}
+.faq-item {
+    margin-bottom:1rem;
+    border-bottom:1px solid #eee;
+    padding-bottom:1rem;
+}
+.faq-question {
+    font-weight:800;
+    color:var(--green);
+    margin-bottom:0.5rem;
+}
+
+.google-map {
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:5px solid white;
+    margin: 2rem 0;
+}
+
+@media(max-width:768px){
+    .header-phone{font-size:1.6rem;}
+    .links-section ul{columns:1;}
+}
+</style>
 </head>
 <body>
 
 <header>
     <div class="container">
         <img src="/images/logo.png" alt="Welsh Town and Country Pest Services Logo" style="max-width:200px; margin-bottom: 15px;">
-        <h1>Pest Control for Shops & Takeaways in Cardiff & South Wales</h1>
-        <p>Protect your food business, customers, and hygiene rating with local, professional, pet-safe pest control.</p>
-        <a href="tel:07375303124" class="header-phone" aria-label="Call 07375 303124 for 24/7 Emergency Pest Control">Call 07375 303124 – 24/7 Emergency</a>
+        <h1>Welsh Town and Country Pest Services</h1>
+        <p>30+ Years Professional Field Experience | Operated by David Hill (Ex-Pestokil)</p>
+        <a href="tel:07375303124" class="header-phone">24/7 EMERGENCY: 07375 303124</a>
     </div>
 </header>
 
 <main class="container">
+
     <section class="section">
-        <h2>Fast, Discreet & Poison-Free Pest Control for Food Businesses</h2>
-        <p>Running a shop, takeaway, or food business in <strong>Cardiff, Newport, or the Valleys</strong> is challenging enough without pests threatening your hygiene rating or reputation. At <strong>Welsh Town and Country Pest Services</strong>, we provide:</p>
-        <ul>
-            <li>Permanent proofing to keep rats & mice out of kitchens and storerooms</li>
-            <li>Same-day wasp and fly removal</li>
-            <li>Audit-ready Environmental Health & Red Tractor reports</li>
-            <li>100% poison-free and pet-safe solutions</li>
-        </ul>
-        <p>All work is performed by <strong>David Hill</strong>, an ex-Pestokil technician with 30+ years of experience and RSPH SUoR certification.</p>
+        <h2>Pest Control for Shops, Takeaways & Food Businesses</h2>
+        <p>We provide professional pest control for commercial properties in <strong>Cardiff, Newport, and South Wales</strong>. Protect your business from rats, mice, wasps, and other pests with fast, reliable service.</p>
     </section>
 
     <section class="grid">
         <div class="card">
-            <h3>🐀 Rodent Proofing for Shops & Takeaways</h3>
-            <p>Stop rats & mice from damaging stock or kitchens. We use technical exclusion methods with stainless steel, CCTV drain surveys, and rat valves—no poisons required.</p>
+            <h3>🐀 Rodent Proofing</h3>
+            <p>Technical exclusion using stainless steel, CCTV drain surveys, and kitchen & storage proofing.</p>
+            <ul>
+                <li>CCTV drain surveys</li>
+                <li>Stainless steel rat valves</li>
+                <li>Kitchen & storage proofing</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h3>🐝 Wasps & Hornets</h3>
-            <p>Same-day removal of nests inside or outside commercial properties. Safe for staff, customers, and pets.</p>
+            <h3>🐝 Wasp & Hornet Removal</h3>
+            <p>Rapid same-day removal for commercial properties, including kitchens and storage areas.</p>
+            <ul>
+                <li>£80 per nest</li>
+                <li>Additional nests £20 each</li>
+                <li>Emergency response</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h3>🐜 Flies, Cockroaches & Other Pests</h3>
-            <p>Comprehensive pest control solutions tailored to shops, takeaways, and food prep areas. Full hygiene compliance supported.</p>
+            <h3>🐜 General Pest Control</h3>
+            <p>Treatments for flies, cockroaches, and other common commercial pests, with documentation for inspections.</p>
         </div>
     </section>
 
     <section class="partner-box">
-        <h2>24/7 Emergency & Audit-Ready Service</h2>
-        <p>We provide urgent pest response for food businesses across Cardiff and South Wales. All visits come with full documentation suitable for Environmental Health inspections.</p>
-        <p>Protect your customers, staff, and hygiene rating today. Quick surveys and immediate solutions are our specialty.</p>
+        <h2>Audit-Ready & 24/7 Service</h2>
+        <p>All visits come with documentation suitable for Environmental Health inspections. We operate across Cardiff & South Wales with urgent response available 24/7.</p>
+        <p style="margin-top:1rem; text-align:center; font-weight:600;">
+            Call David Hill now: <a href="tel:07375303124">07375 303124</a> for a free survey.
+        </p>
     </section>
 
     <section class="links-section">
-        <h2>Areas We Cover</h2>
+        <h2>Areas Covered</h2>
         <ul>
-            <li>Cardiff & Cardiff Bay</li>
+            <li>Cardiff</li>
             <li>Newport</li>
-            <li>The Valleys: Merthyr Tydfil, Aberdare, Pontypridd, etc.</li>
-            <li>South Wales rural & suburban food businesses</li>
+            <li>Merthyr Tydfil</li>
+            <li>Aberdare</li>
+            <li>Pontypridd</li>
+            <li>The Valleys & South Wales</li>
         </ul>
     </section>
 
     <section class="section" id="faq">
-        <h2>FAQ – Shops & Takeaways</h2>
+        <h2>FAQ</h2>
         <div class="faq-container">
             <div class="faq-item">
-                <div class="faq-question">Are your treatments safe for food areas?</div>
-                <div class="faq-answer">Yes, all methods are fully compliant with food hygiene standards and poison-free for staff, pets, and customers.</div>
-            </div>
-            <div class="faq-item">
                 <div class="faq-question">Do you provide emergency visits?</div>
-                <div class="faq-answer">Absolutely. We operate 24/7 with same-day response for rats, wasps, and urgent infestations.</div>
+                <div class="faq-answer">Yes, we operate 24/7 with same-day response for rats, wasps, and urgent infestations.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Are you certified?</div>
-                <div class="faq-answer">Yes, RSPH SUoR certified, fully insured, and David Hill has 30+ years of hands-on pest control experience.</div>
+                <div class="faq-question">Are you certified and insured?</div>
+                <div class="faq-answer">Yes, RSPH SUoR certified, fully insured, with 30+ years of experience.</div>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <p style="text-align:center; font-size:1.2rem; font-weight:600; margin-top:2rem;">
-            Call David Hill now: <a href="tel:07375303124">07375 303124</a> or email: <a href="mailto:welshtownandcountry@gmail.com">welshtownandcountry@gmail.com</a> for your free survey today.
-        </p>
-    </section>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455344.61371057044!2d-4.250082706936623!3d51.828720867268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa316942cc26fc9bf%3A0x141ca663679e0707!2sWelsh%20town%20and%20country%20pest%20services!5e1!3m2!1sen!2suk!4v1770342264570!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Location Map"></iframe>
+    </div>
+
 </main>
 
 <footer>
     <div class="container">
-        <p>© 2026 Welsh Town and Country Pest Services | RSPH SUoR Certified | Fully Insured</p>
-        <p>Operated by David Hill, Ex-Pestokil Technician | Serving Cardiff & South Wales</p>
+        <strong>Welsh Town and Country Pest Services</strong>
+        <p>© 2026 | RSPH SUoR Certified | Fully Insured</p>
+        <p>Operated by David Hill | 30+ Years Field Experience | Former Pestokil Technician</p>
+        <p style="margin: 1.5rem 0;">
+            📞 <a href="tel:07375303124">07375 303124</a>
+        </p>
     </div>
 </footer>
 
